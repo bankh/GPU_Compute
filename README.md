@@ -28,6 +28,8 @@ AMD has undergone changes to its documentation system without properly maintaini
 **RAM:** 256 Gb 3200Mhz  
 **Motherboard:** Asus WX WRX80E-SAGE  
 
+__Note:__ The bios (1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It required to downgrade the bios to 0701 and switch off the on-board graphics output (default on). 
+
 ### Software
 **OS:** Linux 20.04.5 LTS (focal)  
 **Kernel:** 5.15.0.58-generic  
