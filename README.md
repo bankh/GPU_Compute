@@ -21,6 +21,11 @@ The current process of installing Docker is relatively straightforward and offer
 ##### Standard Installation
 AMD has undergone changes to its documentation system without properly maintaining the previous libraries. For instance, pre-3.7 ROCm documentation can be found at one link, while documentation between 3.7 and 4.0 can be found at another, and post-4.0 documentation at yet another. This repetition in the documentation creates confusion and wastes time for users. To remain competitive in the market, AMD needs to take concrete steps to streamline its documentation and avoid these issues. The users hope to see similar successes with AMD's workstation CPUs (such as the Zen series and later models) reflected in their documentation efforts.
 
+Here we need to refer some of the good examples of fixing the issues for installation:
+- xuhuisheng/rocm-build (repository)
+- 
+-
+
 ## Test System
 ### Hardware
 **CPU:** AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)  
@@ -34,10 +39,10 @@ __Note:__ The bios (1003) of Asus WX WRX80E-SAGE board was problematic during th
 **OS:** Linux 20.04.5 LTS (focal)  
 **Kernel:** 5.15.0.58-generic  
 **Python:** 3.8.10
+
 #### ROCm
 
 ##### Benchmarks
-
 It is crucial to evaluate the hardware and software using a standardized architecture. The following results showcase the performance of hardware from two widely recognized frameworks, along with some of their benchmark results obtained from their respective Github repositories.
 
 ###### Pytorch
