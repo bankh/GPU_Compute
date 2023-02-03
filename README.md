@@ -1,13 +1,14 @@
-# GPU_Compute
-Here, notes and tools will be added for GPU Computation. The overall write-up would take some time. As a start of this repository, 
-the focus will be more on AMD GPUs and its platforms (e.g., ROCm).
+# GPU Compute
+This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs and their platforms (e.g. ROCm). Over time, information about Nvidia GPUs will also be added.
 
 ## Hardware
-### AMD-based GPUs
+The field of GPU computation has been experiencing significant advancements in recent years, driven by the increasing demand for high-performance computing solutions. At the forefront of this progress are two leading companies in the GPU market, Nvidia and AMD. Nvidia GPUs are known for their powerful performance and robust software ecosystem, while AMD GPUs offer a compelling combination of affordability and performance. Whether you are a seasoned veteran or just starting out, this guide will provide you with the information you might find useful to make informed decisions about the hardware you use for your computational needs.
 
+### AMD-based GPUs
+AMD-based GPUs are a powerful and flexible choice for GPU computing, offering high performance, scalability, and a rich ecosystem of tools and libraries. However, it's important for developers to be mindful of the challenges and limitations that may arise when using these GPUs, and to choose the best platform and tools to suit their specific needs.
 
 ### NVidia-based GPUs
-TBA
+Nvidia-based GPUs offer a powerful and flexible platform for high-performance computing and graphics rendering, making them an excellent choice for a wide range of applications. Whether you are working in scientific simulations, machine learning, or multimedia content creation, Nvidia-based GPUs can help you get the most out of your computing resources.
 
 ## Software
 One of the major challenges in the software arena is the incompatibility between different versions of platforms, drivers, and libraries. This results in significant changes in existing architecture (programs built using these libraries) when transitioning to a new version of the platform (such as ROCm or CUDA). ROCm, for instance, has comparatively limited support and appears more unstable than the CUDA structure of NVIDIA. For example, AMD GPU support is shorter compared to the support provided by NVIDIA. However, there could be various reasons for this, such as a shortage of personnel to handle the programming workload or frequent drastic changes in products (such as gfx8xx, gfx9xx, gfx10xx, RNA, etc.).
@@ -33,7 +34,7 @@ Here, we need to refer some of the good examples of fixing the issues for instal
 **RAM:** 256 Gb 3200Mhz  
 **Motherboard:** Asus WX WRX80E-SAGE  
 
-__Note:__ The bios (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the bios to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). It also needs to switch off the on-board graphics output (by default on). 
+__Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). It also needs to switch off the on-board graphics output (by default on). 
 
 ### Software
 **OS:** Linux 20.04.5 LTS (focal)  
