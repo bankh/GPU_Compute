@@ -22,7 +22,7 @@ The current process of installing Docker is relatively straightforward and offer
 AMD has undergone changes to its documentation system without properly maintaining the previous libraries. For instance, pre-3.7 ROCm documentation can be found at one link, while documentation between 3.7 and 4.0 can be found at another, and post-4.0 documentation at yet another. This repetition in the documentation creates confusion and wastes time for users. To remain competitive in the market, AMD needs to take concrete steps to streamline its documentation and avoid these issues. The users hope to see similar successes with AMD's workstation CPUs (such as the Zen series and later models) reflected in their documentation efforts.
 
 Here we need to refer some of the good examples of fixing the issues for installation:
-- xuhuisheng/rocm-build (repository)
+- xuhuisheng/rocm-build ([repository](https://github.com/xuhuisheng/rocm-build))
 - 
 -
 
@@ -33,7 +33,7 @@ Here we need to refer some of the good examples of fixing the issues for install
 **RAM:** 256 Gb 3200Mhz  
 **Motherboard:** Asus WX WRX80E-SAGE  
 
-__Note:__ The bios (1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It required to downgrade the bios to 0701 and switch off the on-board graphics output (default on). 
+__Note:__ The bios (1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It require to downgrade the bios to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)) and switch off the on-board graphics output (by default on). 
 
 ### Software
 **OS:** Linux 20.04.5 LTS (focal)  
