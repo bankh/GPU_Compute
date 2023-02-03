@@ -19,11 +19,11 @@ One of the major challenges in the software arena is the incompatibility between
 The current process of installing Docker is relatively straightforward and offers flexibility in overcoming compatibility issues between platforms, drivers, and libraries. Simply install the desired version of the target platform, driver, and libraries. Then use whichever docker image is appropriate for the purpose without changing much in the host system. An evaluation is necessary to see the difference between Docker installations as well. For example, we have encountered a problem with ROCm 3.7 installations, which experience computational issues with gfx803-based GPUs (such as the RX580). There are various comments and potential solutions available online related to this and similar issues.
 
 ##### Standard Installation
-AMD has undergone changes to its documentation system without properly maintaining the previous libraries. For instance, pre-3.7 ROCm documentation can be found at one link, while documentation between 3.7 and 4.0 can be found at another, and post-4.0 documentation at yet another. This repetition in the documentation creates confusion and wastes time for users. To remain competitive in the market, AMD needs to take concrete steps to streamline its documentation and avoid these issues. The users hope to see similar successes with AMD's workstation CPUs (such as the Zen series and later models) reflected in their documentation efforts.
+AMD has undergone changes to its documentation system without properly maintaining the previous libraries. For instance, ROCm documentation with some links can be found at [GitHub](https://github.com/RadeonOpenCompute/ROCm/), while another one here, at yet another here. This repetition in the documentation creates confusion and wastes time for users. To remain competitive in the market, AMD needs to take concrete steps to streamline its documentation and support.
 
-Here we need to refer some of the good examples of fixing the issues for installation:
+Here, we need to refer some of the good examples of fixing the issues for installation:
 - xuhuisheng/rocm-build ([repository](https://github.com/xuhuisheng/rocm-build))
-- 
+- rictorp/rocm.md ([gist link](https://gist.github.com/rigtorp/d9483af100fb77cee57e4c9fa3c74245))
 -
 
 ## Test System
