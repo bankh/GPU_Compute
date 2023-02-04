@@ -60,4 +60,4 @@ MNIST Result (ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 
 **3.2.1.1.2 Tensorflow**  
 
-### 3.2.1 CUDA
+### 3.2.2 CUDA
