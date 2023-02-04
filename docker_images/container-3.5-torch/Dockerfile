@@ -6,7 +6,7 @@ RUN apt update -y
 #RUN apt install -y software-properties-common
 #RUN add-apt-repository -y ppa:deadsnakes/ppa
 #RUN apt update -y
-RUN apt install -y wget python3.8 python3-pip
+RUN apt install -y wget python3.8 python3.8-dev python3-pip
 RUN echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian ubuntu main' | \
     sudo tee /etc/apt/sources.list.d/rocm.list
 RUN wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
