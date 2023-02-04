@@ -47,6 +47,14 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 It is crucial to evaluate the hardware and software using a standardized architecture. The following results showcase the performance of hardware from two widely recognized frameworks, along with some of their benchmark results obtained from their respective Github repositories.
 
 ###### Pytorch
+[Pytorch/examples repository](https://github.com/pytorch/examples) is one of the great references to see the performance of the current hardware and software.  
 
+MNIST  
+```
+$ git clone https://github.com/pytorch/examples
+$ cd examples/mnist
+$ python3 main.py --no-mps
+```  
+MNIST Result (ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 
 ###### Tensorflow
