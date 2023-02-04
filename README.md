@@ -7,7 +7,7 @@ The field of GPU computation has been experiencing significant advancements in r
 ### 1.1 AMD-based GPUs
 AMD-based GPUs are a powerful and flexible choice for GPU computing, offering high performance, scalability, and a rich ecosystem of tools and libraries. However, it's important for developers to be mindful of the challenges and limitations that may arise when using these GPUs, and to choose the best platform and tools to suit their specific needs.
 
-### 1.1 NVidia-based GPUs
+### 1.2 NVidia-based GPUs
 Nvidia-based GPUs offer a powerful and flexible platform for high-performance computing and graphics rendering, making them an excellent choice for a wide range of applications. Whether you are working in scientific simulations, machine learning, or multimedia content creation, Nvidia-based GPUs can help you get the most out of your computing resources.
 
 ## 2. Software
