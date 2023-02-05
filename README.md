@@ -1,5 +1,5 @@
 # GPU Compute
-This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs and their platforms (e.g. ROCm). Over time, information about Nvidia GPUs will also be added.
+This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs (mainly polaris gfx8xx) and their platforms (e.g. ROCm). Over time, information about Nvidia GPUs will also be added.
 
 ## 1. Hardware
 The field of GPU computation has been experiencing significant advancements in recent years, driven by the increasing demand for high-performance computing solutions. At the forefront of this progress are two leading companies in the GPU market, Nvidia and AMD. Nvidia GPUs are known for their powerful performance and robust software ecosystem, while AMD GPUs offer a compelling combination of affordability and performance. Whether you are a seasoned veteran or just starting out, this guide will provide you with the information you might find useful to make informed decisions about the hardware you use for your computational needs.
