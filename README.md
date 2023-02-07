@@ -42,6 +42,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 **OS:** Linux 20.04.5 LTS (focal)  
 **Kernel:** 5.15.0.58-generic  
 **Python:** 3.8.10
+**Docker:** version 23.0.0, build e92dd87
 
 ### 3.2.1 ROCm  
 
