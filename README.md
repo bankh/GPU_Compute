@@ -38,11 +38,11 @@ Here, we need to refer some of the good examples of fixing the issues for instal
 
 __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). It also needs to switch off the on-board graphics output (by default on). 
 
-### 3.2 Software
+### 3.2 Software  
 **OS:** Linux 20.04.5 LTS (focal)  
 **Kernel:** 5.15.0.58-generic  
-**Python:** 3.8.10
-**Docker:** version 23.0.0, build e92dd87
+**Python:** 3.8.10  
+**Docker:** version 23.0.0, build e92dd87  
 
 ### 3.2.1 ROCm  
 
