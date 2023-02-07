@@ -23,6 +23,7 @@ The current process of installing Docker is relatively straightforward and offer
 AMD has undergone changes to its documentation system without properly maintaining the previous libraries. For instance, ROCm documentation with some links can be found at [GitHub](https://github.com/RadeonOpenCompute/ROCm/), while another one here, at yet another here. This repetition in the documentation creates confusion and wastes time for users. To remain competitive in the market, AMD needs to take concrete steps to streamline its documentation and support.
 
 Here, we need to refer some of the good examples of fixing the issues for installation:
+- [Frameworks Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)
 - xuhuisheng/rocm-build ([repository](https://github.com/xuhuisheng/rocm-build))
 - rictorp/rocm.md ([gist link](https://gist.github.com/rigtorp/d9483af100fb77cee57e4c9fa3c74245))
 -
