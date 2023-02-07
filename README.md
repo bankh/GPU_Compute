@@ -26,7 +26,8 @@ Here, we need to refer some of the good examples of fixing the issues for instal
 - [Frameworks Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)
 - xuhuisheng/rocm-build ([repository](https://github.com/xuhuisheng/rocm-build))
 - rictorp/rocm.md ([gist link](https://gist.github.com/rigtorp/d9483af100fb77cee57e4c9fa3c74245))
--
+
+### 2.2 CUDA
 
 ## 3. Test System
 ### 3.1 Hardware
@@ -61,4 +62,4 @@ MNIST Result (ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 
 **3.2.1.1.2 Tensorflow**  
 A good reference for performance comparison can be found [here](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/173).
-### 3.2.2 CUDA
+
