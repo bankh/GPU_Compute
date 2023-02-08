@@ -27,7 +27,7 @@ AMD has undergone changes to its documentation system without properly maintaini
 Here, we need to refer some of the good examples of fixing the issues for installation:
 - xuhuisheng/rocm-build ([repository](https://github.com/xuhuisheng/rocm-build))  
 - rictorp/rocm.md ([gist link](https://gist.github.com/rigtorp/d9483af100fb77cee57e4c9fa3c74245))  
-- [AIeater](https://github.com/aieater/rocm_pytorch_informations)
+- [AIeater](https://github.com/aieater/rocm_pytorch_informations) by [GPUeater](https://www.gpueater.com/index.html)
 
 ### 2.2 CUDA
 
