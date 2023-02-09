@@ -85,7 +85,7 @@ $ python3 tools/amd\_build/build\_amd.py
 $ USE\_ROCM=1 MAX\_JOBS=4 python3 setup.py install --user
 ```
 
-__Note:__ Please make sure checking the versions of the other libraries (e.g., see https://pypi.org/project/torchvision/, https://pypi.org/project/torchtext/) which are critical for the operation of the PyTorch. For example, for torch1.6, the installation of torchtext and torchvision will be:  
+__Note:__ Please make sure checking the versions of the other libraries (e.g., see [torchvision version table] (https://pypi.org/project/torchvision/), [torchtext version table](https://pypi.org/project/torchtext/)) which are critical for the operation of the PyTorch. For example, for torch1.6, the installation of torchtext and torchvision will be:  
 
 ```
 $ pip install torchvision==0.7.0 --no-deps
