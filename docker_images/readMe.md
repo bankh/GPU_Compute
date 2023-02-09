@@ -30,15 +30,15 @@ $ docker images
 The command above should return `pytorch-linux-bionic-rocm3.5-py3.8` and we can use the image in the next step.
 
 **4-** Start a Docker container using the generated image (on step #2 - 'pytorch-linux-bionic-rocm3.5-py3.8') the comments below explain the code syntax as well. 
--it: Starts the container in interactive mode, allowing you to interact with the terminal of the container.  
---cap-add=SYS_PTRACE: Adds the capability SYS_PTRACE to the container, which allows processes in the container to trace other processes.  
---security-opt seccomp=unconfined: Disables the default seccomp security profile for the container, allowing the container to use system calls that would otherwise be restricted.  
---device=/dev/kfd and --device=/dev/dri: Adds access to the GPU in the host system to the container, which is necessary for GPU-accelerated computations.  
---group-add video: Adds the video group to the container, which is necessary for GPU acceleration.  
---ipc=host: Sets the inter-process communication (IPC) namespace of the container to that of the host, allowing the container to share IPC resources with the host.  
---shm-size 8G: Sets the size of the shared memory for the container to 8GB.  
--v /mnt/data_drive:/mnt/data_drive: Mounts the `/mnt/data_drive` directory from the host system to the same directory within the container, allowing the container to access data on the host system. That is especially useful to share the data or model between different Docker images and the host system.  
-pytorch-linux-bionic-rocm3.5-py3.8: Specifies the name of the Docker image to run.  
+**-it**: Starts the container in interactive mode, allowing you to interact with the terminal of the container.  
+**--cap-add=SYS_PTRACE**: Adds the capability SYS_PTRACE to the container, which allows processes in the container to trace other processes.  
+**--security-opt seccomp=unconfined**: Disables the default seccomp security profile for the container, allowing the container to use system calls that would otherwise be restricted.  
+**--device=/dev/kfd** and **--device=/dev/dri**: Adds access to the GPU in the host system to the container, which is necessary for GPU-accelerated computations.  
+**--group-add video**: Adds the video group to the container, which is necessary for GPU acceleration.  
+**--ipc=host**: Sets the inter-process communication (IPC) namespace of the container to that of the host, allowing the container to share IPC resources with the host.  
+**--shm-size 8G**: Sets the size of the shared memory for the container to 8GB.  
+**-v /mnt/data_drive:/mnt/data_drive**: Mounts the `/mnt/data_drive` directory from the host system to the same directory within the container, allowing the container to access data on the host system. That is especially useful to share the data or model between different Docker images and the host system.  
+**pytorch-linux-bionic-rocm3.5-py3.8**: Specifies the name of the Docker image to run.  
 
 ```
 $ docker run -it --cap-add=SYS_PTRACE --security-opt \
