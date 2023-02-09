@@ -69,7 +69,7 @@ $ rocminfo | grep gfx
 ```
 $ export PYTORCH_ROCM_ARCH=gfx803
 ```
-**c.** Build pytorch using a bash script:  
+**c.** Build pytorch using a bash script which hippify (converting AMD compatible form) and compile PyTorch:  
 ```
 $ ./.jenkins/pytorch/build.sh
 ```
