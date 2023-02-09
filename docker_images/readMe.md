@@ -16,14 +16,20 @@ __Remark:__ Please make sure that you setup the appropriate version of the Pytor
 
 
 **2-** Build the PyTorch Docker image:  
-Below the build sample is Ubuntu 18.04 Bionic for ROCm3.5 and Python 3.8.  
+Below the build sample is __Ubuntu 18.04 Bionic for ROCm3.5 and Python 3.8__.  
 ```
 $ cd .circleci/docker
 $ ./build.sh pytorch-linux-bionic-rocm3.5-py3.8
 ```
 This should be complete with a message, "Successfully build."  
 
-**3-** Start a Docker container using an image the comments below explain the code syntax as well:  
+**3-** Check the existence of the Docker image on the host system:  
+```
+$ docker images
+```
+The command above should return `pytorch-linux-bionic-rocm3.5-py3.8` and we can use the image in the next step.
+
+**4-** Start a Docker container using the generated image (on step #2 - 'pytorch-linux-bionic-rocm3.5-py3.8') the comments below explain the code syntax as well. 
 -it: Starts the container in interactive mode, allowing you to interact with the terminal of the container.  
 --cap-add=SYS_PTRACE: Adds the capability SYS_PTRACE to the container, which allows processes in the container to trace other processes.  
 --security-opt seccomp=unconfined: Disables the default seccomp security profile for the container, allowing the container to use system calls that would otherwise be restricted.  
@@ -43,14 +49,14 @@ $ docker run -it --cap-add=SYS_PTRACE --security-opt \
                  pytorch-linux-bionic-rocm3.5-py3.8
 ```
 
-**4-** Update the address and key for apt repo with `apt update`
+**5-** Update the address and key for apt repo with `apt update`
 ```
 $ wget -qO - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
 $ echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/3.5/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list
 $ sudo apt update
 ```
 
-**5-** Pull the Pytorch to the docker container:
+**6-** Pull the Pytorch to the docker container:
 ```
 $ cd ~  
 $ git clone https://github.com/pytorch/pytorch.git  
@@ -59,7 +65,7 @@ $ git checkout 1.6
 $ git submodule update --init --recursive
 ```
 
-**6-** Install the pytorch on the container that is started on step 3.  
+**7-** Install the pytorch on the container that is started on step 3.  
 **a.** Determine the <uarch> (architecture) of the graphics card (GPU):
 ```
 $ rocminfo | grep gfx
