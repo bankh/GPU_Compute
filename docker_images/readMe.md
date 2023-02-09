@@ -7,7 +7,7 @@ We can present a simple method of installation without a dockerfile and relying 
 1- Clone PyTorch repository on the host system:  
 ```
 $ cd ~  
-$ cd clone https://github.com/pytorch/pytorch.git  
+$ git clone https://github.com/pytorch/pytorch.git  
 $ cd pytorch  
 $ git submodule update --init --recursive
 ```
