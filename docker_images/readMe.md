@@ -9,12 +9,11 @@ We can present a simple method of installation without a dockerfile and relying 
 $ cd ~  
 $ git clone https://github.com/pytorch/pytorch.git  
 $ cd pytorch  
+$ git checkout 1.6 # Read the remark below
 $ git submodule update --init --recursive
 ```
 __Remark:__ Please make sure that you setup the appropriate version of the Pytorch on this step that you plan to install for the Docker container. Otherwise, especially for the legacy versions (e.g., Pytorch 1.6), the later steps will utilize more recent libraries and the generated Docker image will have issues. Therefore, it is important to use the same version of the Pytorch and changing the version (e.g., `1.6` below) by using the following command:  
-```
-$ git checkout 1.6
-```
+
 
 **2-** Build the PyTorch Docker image:  
 Below the build sample is Ubuntu 18.04 Bionic for ROCm3.5 and Python 3.8.  
@@ -56,8 +55,8 @@ $ sudo apt update
 $ cd ~  
 $ git clone https://github.com/pytorch/pytorch.git  
 $ cd pytorch  
-$ git submodule update --init --recursive
 $ git checkout 1.6
+$ git submodule update --init --recursive
 ```
 
 **6-** Install the pytorch on the container that is started on step 3.  
