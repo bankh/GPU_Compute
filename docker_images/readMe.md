@@ -43,7 +43,14 @@ $ docker run -it --cap-add=SYS_PTRACE --security-opt \
                  -v /mnt/data_drive:/mnt/data_drive \
                  pytorch-linux-bionic-rocm3.5-py3.8
 ```
-4- Pull the Pytorch to the docker container:
+
+6- Change the update address and key for apt repo with `apt update`
+```
+$ wget -qO - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
+$ echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/3.5/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list
+```
+
+5- Pull the Pytorch to the docker container:
 ```
 $ cd ~  
 $ git clone https://github.com/pytorch/pytorch.git  
@@ -52,7 +59,7 @@ $ git submodule update --init --recursive
 $ git checkout 1.6
 ```
 
-5- Install the pytorch on the container that is started on step 3.  
+6- Install the pytorch on the container that is started on step 3.  
 a. Determine the type of the card
 ```
 $ rocminfo | grep gfx
