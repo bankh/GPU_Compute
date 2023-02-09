@@ -4,7 +4,7 @@ Here, the presented images are tested under the testing system without an error.
 **Installation steps:**  
 We can present a simple method of installation without a dockerfile and relying on the standard tools from the developers (e.g., Pytorch, Docker, AMD, etc.).  
 
-1- Clone PyTorch repository on the host system:  
+**1-** Clone PyTorch repository on the host system:  
 ```
 $ cd ~  
 $ git clone https://github.com/pytorch/pytorch.git  
@@ -16,7 +16,7 @@ __Remark:__ Please make sure that you setup the appropriate version of the Pytor
 $ git checkout 1.6
 ```
 
-2- Build the PyTorch Docker image:  
+**2-** Build the PyTorch Docker image:  
 Below the build sample is Ubuntu 18.04 Bionic for ROCm3.5 and Python 3.8.  
 ```
 $ cd .circleci/docker
@@ -24,7 +24,7 @@ $ ./build.sh pytorch-linux-bionic-rocm3.5-py3.8
 ```
 This should be complete with a message, "Successfully build."  
 
-3- Start a Docker container using an image the comments below explain the code syntax as well:  
+**3-** Start a Docker container using an image the comments below explain the code syntax as well:  
 -it: Starts the container in interactive mode, allowing you to interact with the terminal of the container.  
 --cap-add=SYS_PTRACE: Adds the capability SYS_PTRACE to the container, which allows processes in the container to trace other processes.  
 --security-opt seccomp=unconfined: Disables the default seccomp security profile for the container, allowing the container to use system calls that would otherwise be restricted.  
@@ -44,13 +44,13 @@ $ docker run -it --cap-add=SYS_PTRACE --security-opt \
                  pytorch-linux-bionic-rocm3.5-py3.8
 ```
 
-6- Change the update address and key for apt repo with `apt update`
+**4-** Change the update address and key for apt repo with `apt update`
 ```
 $ wget -qO - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
 $ echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/3.5/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list
 ```
 
-5- Pull the Pytorch to the docker container:
+**5-** Pull the Pytorch to the docker container:
 ```
 $ cd ~  
 $ git clone https://github.com/pytorch/pytorch.git  
@@ -59,21 +59,21 @@ $ git submodule update --init --recursive
 $ git checkout 1.6
 ```
 
-6- Install the pytorch on the container that is started on step 3.  
-a. Determine the type of the card
+**6-** Install the pytorch on the container that is started on step 3.  
+**a.** Determine the type of the card
 ```
 $ rocminfo | grep gfx
 ```
-b. Setup the compiler for a specific hardware architecture (e.g., gfx803 for Polaris cards RX580):
+**b.** Setup the compiler for a specific hardware architecture (e.g., gfx803 for Polaris cards RX580):
 ```
 $ export PYTORCH_ROCM_ARCH=gfx803
 ```
-c1. Build pytorch using a bash script:  
+**c1.** Build pytorch using a bash script:  
 ```
 $ ./.jenkins/pytorch/build.sh
 ```
 
-c(alternative). Hippify the Pytorch files, compile, and install the library.
+**c(alternative).** Hippify the Pytorch files, compile, and install the library.
 ```
 $ python3 tools/amd\_build/build\_amd.py
 $ USE\_ROCM=1 MAX\_JOBS=4 python3 setup.py install --user
