@@ -44,7 +44,7 @@ $ docker run -it --cap-add=SYS_PTRACE --security-opt \
                  pytorch-linux-bionic-rocm3.5-py3.8
 ```
 
-**4-** Change the update address and key for apt repo with `apt update`
+**4-** Update the address and key for apt repo with `apt update`
 ```
 $ wget -qO - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
 $ echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/3.5/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list
