@@ -1,7 +1,7 @@
 ## Docker Installation
 Here, the presented images are tested under the testing system without an error. The folders with a suffix of '_wip' states a work-in-progress and not suggested to use.  
 
-**Installation steps:**  
+**Suggested Installation steps:**  
 We can present a simple method of installation without a dockerfile and relying on the standard tools from the developers (e.g., Pytorch, Docker, AMD, etc.).  
 
 **1-** Clone PyTorch repository on the host system:  
