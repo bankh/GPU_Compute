@@ -29,7 +29,7 @@ $ docker images
 ```
 The command above should return `pytorch-linux-bionic-rocm3.5-py3.8` and we can use the image in the next step.
 
-**4-** Start a Docker container using the generated image (on step #2 - 'pytorch-linux-bionic-rocm3.5-py3.8') the comments below explain the code syntax as well. 
+**4-** Start a Docker container using the generated image (on step #2 - 'pytorch-linux-bionic-rocm3.5-py3.8') the comments below explain the code syntax as well.  
 **-it**: Starts the container in interactive mode, allowing you to interact with the terminal of the container.  
 **--cap-add=SYS_PTRACE**: Adds the capability SYS_PTRACE to the container, which allows processes in the container to trace other processes.  
 **--security-opt seccomp=unconfined**: Disables the default seccomp security profile for the container, allowing the container to use system calls that would otherwise be restricted.  
