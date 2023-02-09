@@ -61,7 +61,7 @@ $ git checkout 1.6
 ```
 
 **6-** Install the pytorch on the container that is started on step 3.  
-**a.** Determine the type of the card
+**a.** Determine the <uarch> (architecture) of the graphics card (GPU):
 ```
 $ rocminfo | grep gfx
 ```
