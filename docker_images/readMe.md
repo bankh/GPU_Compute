@@ -69,12 +69,12 @@ $ rocminfo | grep gfx
 ```
 $ export PYTORCH_ROCM_ARCH=gfx803
 ```
-**c1.** Build pytorch using a bash script:  
+**c.** Build pytorch using a bash script:  
 ```
 $ ./.jenkins/pytorch/build.sh
 ```
 
-**c(alternative).** Hippify the Pytorch files, compile, and install the library.
+**(Alternative).** Hippify the Pytorch files, compile, and install the library.
 ```
 $ python3 tools/amd\_build/build\_amd.py
 $ USE\_ROCM=1 MAX\_JOBS=4 python3 setup.py install --user
