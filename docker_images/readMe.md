@@ -1,8 +1,8 @@
 ## Docker Installation
-Here, the presented images are tested unter the testing system without an error. The folders with a suffix of '_wip' states a work-in-progress and not suggested to use.  
+Here, the presented images are tested under the testing system without an error. The folders with a suffix of '_wip' states a work-in-progress and not suggested to use.  
 
 **Installation steps:**  
-We can present a simple method of installation without a dockerfile and relying on the standard tools from the developers (e.g., Pytorch, docker, AMD, etc.).  
+We can present a simple method of installation without a dockerfile and relying on the standard tools from the developers (e.g., Pytorch, Docker, AMD, etc.).  
 
 1- Clone PyTorch repository on the host system:  
 ```
@@ -11,7 +11,7 @@ $ cd clone https://github.com/pytorch/pytorch.git
 $ cd pytorch  
 $ git submodule update --init --recursive
 ```
-__NOTE:__ Please make sure that you setup the appropriate version of the Pytorch that you plan to install for the Docker container. Otherwise, for the legacy versions (Pytorch 1.6) the later steps will utilize current libraries and the generated docker image will have issues. Therefore, it is important to use the same version of the Pytorch and changing the version (e.g., 1.6 below) by using the following command:  
+__Remark:__ Please make sure that you setup the appropriate version of the Pytorch on this step that you plan to install for the Docker container. Otherwise, especially for the legacy versions (e.g., Pytorch 1.6), the later steps will utilize more recent libraries and the generated Docker image will have issues. Therefore, it is important to use the same version of the Pytorch and changing the version (e.g., `1.6` below) by using the following command:  
 ```
 $ git checkout 1.6
 ```
@@ -32,7 +32,7 @@ This should be complete with a message, "Successfully build."
 --group-add video: Adds the video group to the container, which is necessary for GPU acceleration.  
 --ipc=host: Sets the inter-process communication (IPC) namespace of the container to that of the host, allowing the container to share IPC resources with the host.  
 --shm-size 8G: Sets the size of the shared memory for the container to 8GB.  
--v /mnt/data_drive:/mnt/data_drive: Mounts the /mnt/data_drive directory from the host system to the same directory within the container, allowing the container to access data on the host system.  
+-v /mnt/data_drive:/mnt/data_drive: Mounts the `/mnt/data_drive` directory from the host system to the same directory within the container, allowing the container to access data on the host system. That is especially useful to share the data or model between different Docker images and the host system.  
 pytorch-linux-bionic-rocm3.5-py3.8: Specifies the name of the Docker image to run.  
 
 ```
@@ -44,7 +44,7 @@ $ docker run -it --cap-add=SYS_PTRACE --security-opt \
                  pytorch-linux-bionic-rocm3.5-py3.8
 ```
 
-4- Install the pytorch on the container that is started on step 3.
+4- Install the pytorch on the container that is started on step 3.  
 a. Determine the type of the card
 ```
 $ rocminfo | grep gfx
@@ -58,8 +58,12 @@ c1. Build pytorch using a bash script:
 $ ./.jenkins/pytorch/build.sh
 ```
 
-c(alternative).
+c(alternative). Hippify the Pytorch files, compile, and install the library.
+```
+$ python3 tools/amd\_build/build\_amd.py
+$ USE\_ROCM=1 MAX\_JOBS=4 python3 setup.py install --user
+```
 
 **Reference:**  
-[1] [ROCm Deep Learning Guide v5.3](https://hub.docker.com/r/rocm/pytorch)
+[1] [ROCm Deep Learning Guide v5.3](https://hub.docker.com/r/rocm/pytorch)  
 [2] [Framework Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)
