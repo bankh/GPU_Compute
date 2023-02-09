@@ -48,6 +48,7 @@ $ docker run -it --cap-add=SYS_PTRACE --security-opt \
 ```
 $ wget -qO - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
 $ echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/3.5/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list
+$ sudo apt update
 ```
 
 **5-** Pull the Pytorch to the docker container:
