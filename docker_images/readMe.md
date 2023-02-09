@@ -85,6 +85,15 @@ $ python3 tools/amd\_build/build\_amd.py
 $ USE\_ROCM=1 MAX\_JOBS=4 python3 setup.py install --user
 ```
 
+__Note:__ Please make sure checking the versions of the other libraries (e.g., see https://pypi.org/project/torchvision/, https://pypi.org/project/torchtext/) which are critical for the operation of the PyTorch. For example, for torch1.6, the installation of torchtext and torchvision will be:  
+
+```
+$ pip install torchvision==0.7.0 --no-deps
+$ pip install torchtext==0.7 --no-deps
+```
+
+We suggest to install without the dependencies (use `--no-deps` flag). Otherwise, the installation might neglect the version of the torch that you compiled and might try to use the installer manager to override the torch. This will result in an installation that won't be compatible to AMD GPUs.
+
 **Reference:**  
 [1] [ROCm Deep Learning Guide v5.3](https://hub.docker.com/r/rocm/pytorch)  
 [2] [Framework Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)
