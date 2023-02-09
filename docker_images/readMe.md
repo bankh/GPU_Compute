@@ -65,7 +65,7 @@ $ git checkout 1.6
 $ git submodule update --init --recursive
 ```
 
-**7-** Install the pytorch on the container that is started on step 3.  
+**7-** Install the pytorch on the container that is started on step #4.  
 **a.** Determine the <uarch> (architecture) of the graphics card (GPU):
 ```
 $ rocminfo | grep gfx
