@@ -96,6 +96,16 @@ $ pip install torchtext==0.7 --no-deps
 
 We suggest to install without the dependencies (use `--no-deps` flag). Otherwise, the installation might neglect the version of the torch that you compiled and might try to use the installer manager to override the torch. This will result in an installation that won't be compatible to AMD GPUs.
 
+If you install a compatible version and still experiencing errors you can follow an installation from source:  
+
+```
+$ git clone https://github.com/pytorch/vision
+$ cd vision
+$ git checkout v0.6.0
+$ USE_ROCM=1 MAX_JOBS=8 USE_OPENCV=1 python3 setup.py install --user
+```
+ 
+
 **Reference:**  
 [1] [ROCm Deep Learning Guide v5.3](https://hub.docker.com/r/rocm/pytorch)  
 [2] [Framework Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)
