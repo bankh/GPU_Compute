@@ -76,13 +76,13 @@ $ rocminfo | grep gfx
 $ export PYTORCH_ROCM_ARCH=gfx803
 ```
 
-**c.**  Hippify the Pytorch files, compile, and install the library.
+**c.**  Hippify (converting AMD compatible form) the Pytorch files, compile, and install the library.
 ```
 $ python3 tools/amd\_build/build\_amd.py
 $ USE_ROCM=1 MAX_JOBS=4 python3 setup.py install --user
 ```
 
-**(Alternative).** Build pytorch using a bash script which hippify (converting AMD compatible form) and compile PyTorch:  
+**(Alternative).** Build pytorch using a bash script which hippify and compile PyTorch:  
 ```
 $ ./.jenkins/pytorch/build.sh
 ```
