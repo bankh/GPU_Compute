@@ -100,7 +100,7 @@ If you install a compatible version and still experiencing errors you can follow
 
 ```
 $ cd ~
-$ git clone https://github.com/pytorch/vision
+$ git clone https://github.com/pytorch/vision.git
 $ cd vision
 $ git checkout v0.6.0 # This version is the compatible one with respect to the compiled PyTorch from the example above
 $ USE_ROCM=1 MAX_JOBS=8 USE_OPENCV=1 python3 setup.py install --user
