@@ -79,7 +79,7 @@ $ export PYTORCH_ROCM_ARCH=gfx803
 **c.**  Hippify the Pytorch files, compile, and install the library.
 ```
 $ python3 tools/amd\_build/build\_amd.py
-$ USE\_ROCM=1 MAX\_JOBS=4 python3 setup.py install --user
+$ USE_ROCM=1 MAX_JOBS=4 python3 setup.py install --user
 ```
 
 **(Alternative).** Build pytorch using a bash script which hippify (converting AMD compatible form) and compile PyTorch:  
@@ -96,12 +96,13 @@ $ pip install torchtext==0.7 --no-deps
 
 We suggest to install without the dependencies (use `--no-deps` flag). Otherwise, the installation might neglect the version of the torch that you compiled and might try to use the installer manager to override the torch. This will result in an installation that won't be compatible to AMD GPUs.
 
-If you install a compatible version and still experiencing errors you can follow an installation from source:  
+If you install a compatible version and still experiencing errors you can follow an installation from source on the Docker Container:  
 
 ```
+$ cd ~
 $ git clone https://github.com/pytorch/vision
 $ cd vision
-$ git checkout v0.6.0
+$ git checkout v0.6.0 # This version is the compatible one with respect to the compiled PyTorch from the example above
 $ USE_ROCM=1 MAX_JOBS=8 USE_OPENCV=1 python3 setup.py install --user
 ```
  
