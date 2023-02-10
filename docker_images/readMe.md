@@ -70,19 +70,21 @@ $ git submodule update --init --recursive
 ```
 $ rocminfo | grep gfx
 ```
+
 **b.** Setup the compiler for a specific hardware architecture (e.g., gfx803 for Polaris cards RX580):
 ```
 $ export PYTORCH_ROCM_ARCH=gfx803
 ```
-**c.** Build pytorch using a bash script which hippify (converting AMD compatible form) and compile PyTorch:  
-```
-$ ./.jenkins/pytorch/build.sh
-```
 
-**(Alternative).** Hippify the Pytorch files, compile, and install the library.
+**c.**  Hippify the Pytorch files, compile, and install the library.
 ```
 $ python3 tools/amd\_build/build\_amd.py
 $ USE\_ROCM=1 MAX\_JOBS=4 python3 setup.py install --user
+```
+
+**(Alternative).** Build pytorch using a bash script which hippify (converting AMD compatible form) and compile PyTorch:  
+```
+$ ./.jenkins/pytorch/build.sh
 ```
 
 __Note:__ Please make sure checking the versions of the other libraries (e.g., see [torchvision version table](https://pypi.org/project/torchvision/), [torchtext version table](https://pypi.org/project/torchtext/)) which are critical for the operation of the PyTorch. For example, for torch1.6, the installation of torchtext and torchvision will be:  
