@@ -98,11 +98,21 @@ We suggest to install without the dependencies (use `--no-deps` flag). Otherwise
 
 If you install a compatible version and still experiencing errors you can follow an installation from source on the Docker Container:  
 
+Vision
 ```
 $ cd ~
 $ git clone https://github.com/pytorch/vision.git
 $ cd vision
 $ git checkout v0.6.0 # This version is the compatible one with respect to the compiled PyTorch from the example above
+$ USE_ROCM=1 MAX_JOBS=8 USE_OPENCV=1 python3 setup.py install --user
+```
+
+Text
+```
+$ cd ~
+$ git clone https://github.com/pytorch/text.git
+$ cd text
+$ git checkout 0.6.0 # This version (or 0.7.0) is the compatible one with respect to the compiled PyTorch from the example above
 $ USE_ROCM=1 MAX_JOBS=8 USE_OPENCV=1 python3 setup.py install --user
 ```
  
