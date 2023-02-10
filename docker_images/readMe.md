@@ -90,7 +90,7 @@ $ ./.jenkins/pytorch/build.sh
 __Note:__ Please make sure checking the versions of the other libraries (e.g., see [torchvision version table](https://pypi.org/project/torchvision/), [torchtext version table](https://pypi.org/project/torchtext/)) which are critical for the operation of the PyTorch. For example, for torch1.6, the installation of torchtext and torchvision will be:  
 
 ```
-$ pip install torchvision==0.7.0 --no-deps
+$ pip install torchvision==0.6.0 --no-deps
 $ pip install torchtext==0.7 --no-deps
 ```
 
