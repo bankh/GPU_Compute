@@ -45,6 +45,7 @@ $ docker run -it --cap-add=SYS_PTRACE --security-opt \
                  seccomp=unconfined --device=/dev/kfd \
                  --device=/dev/dri --group-add video \
                  --ipc=host --shm-size 8G \
+                 -p 0.0.0.0:6006:6006 \
                  -v /mnt/data_drive:/mnt/data_drive \
                  pytorch-linux-bionic-rocm3.5-py3.8
 ```
