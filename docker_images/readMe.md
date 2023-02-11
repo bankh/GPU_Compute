@@ -41,13 +41,7 @@ The command above should return `pytorch-linux-bionic-rocm3.5-py3.8` and we can 
 **pytorch-linux-bionic-rocm3.5-py3.8**: Specifies the name of the Docker image to run.  
 
 ```
-$ docker run -it --cap-add=SYS_PTRACE --security-opt \
-                 seccomp=unconfined --device=/dev/kfd \
-                 --device=/dev/dri --group-add video \
-                 --ipc=host --shm-size 8G \
-                 -p 0.0.0.0:6006:6006 \
-                 -v /mnt/data_drive:/mnt/data_drive \
-                 pytorch-linux-bionic-rocm3.5-py3.8
+$ docker run -it --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --device=/dev/kfd --device=/dev/dri --group-add $(getent group render | cut -d':' -f 3) --ipc=host --shm-size 8G -p 0.0.0.0:6006:6006 -v /mnt/data_drive:/mnt/data_drive pytorch-linux-bionic-rocm3.5-py3.8
 ```
 
 **5-** Update the address and key for apt repo with `apt update`
