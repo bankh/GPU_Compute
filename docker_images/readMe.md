@@ -74,7 +74,7 @@ $ export PYTORCH_ROCM_ARCH=gfx803
 **c.**  Hippify (converting AMD compatible form) the Pytorch files, compile, and install the library.
 ```
 $ python3 tools/amd\_build/build\_amd.py
-$ USE_ROCM=1 MAX_JOBS=4 python3 setup.py install --user
+$ USE_ROCM=1 MAX_JOBS=$(nproc) python3 setup.py install --user  #Remark to consider to use less core in MAX_JOBS
 ```
 
 **(Alternative).** Build pytorch using a bash script which hippify and compile PyTorch:  
@@ -99,7 +99,7 @@ $ cd ~
 $ git clone https://github.com/pytorch/vision.git
 $ cd vision
 $ git checkout v0.6.0 # This version is the compatible one with respect to the compiled PyTorch from the example above
-$ USE_ROCM=1 MAX_JOBS=8 USE_OPENCV=1 python3 setup.py install --user
+$ USE_ROCM=1 MAX_JOBS=$(nproc) USE_OPENCV=1 python3 setup.py install --user
 ```
 
 torchtext:
@@ -108,7 +108,7 @@ $ cd ~
 $ git clone https://github.com/pytorch/text.git
 $ cd text
 $ git checkout 0.6.0 # This version (or 0.7.0) is the compatible one with respect to the compiled PyTorch from the example above
-$ USE_ROCM=1 MAX_JOBS=8 USE_OPENCV=1 python3 setup.py install --user
+$ USE_ROCM=1 MAX_JOBS=$(nproc) USE_OPENCV=1 python3 setup.py install --user
 ```
 
 **Reference:**  
