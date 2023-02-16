@@ -43,6 +43,8 @@ A reference of the GPU comparisons from GPUeater's webpage (relatively old data)
 
 __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the on-board graphics output switch (by default on). 
 
+![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/images/test_hardware.png?raw=true)
+
 ### 3.2 Software  
 **OS:** Linux 20.04.5 LTS (focal)  
 **Kernel:** 5.15.0.58-generic  
