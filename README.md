@@ -69,5 +69,7 @@ MNIST Result (ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./images/mnist_rocm43.png)
 
 **3.2.1.1.2 Tensorflow**  
-A good reference for performance comparison can be found [here](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/173).
+A good reference for performance comparison can be found [here](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/173).  
 
+**References**  
+Yin, Junqi, et al. "Comparative evaluation of deep learning workloads for leadership-class systems." BenchCouncil Transactions on Benchmarks, Standards and Evaluations 1.1 (2021): 100005.
