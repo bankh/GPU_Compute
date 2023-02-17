@@ -57,6 +57,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 It is crucial to evaluate the hardware and software using a standardized architecture. The following results showcase the performance of hardware from two widely recognized frameworks, along with some of their benchmark results obtained from their respective Github repositories.
 
 **3.2.1.1.1 Pytorch**  
+**a - Single GPU**  
 [Pytorch/examples repository](https://github.com/pytorch/examples) is one of the great references to see the performance of the current hardware and software.  
 
 __MNIST__  
@@ -67,6 +68,11 @@ $ python3 main.py --no-mps
 ```  
 MNIST Result (ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./images/mnist_rocm43.png)
+
+**b - Multi GPU**  
+References:  
+- [Getting Started with Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
+- [SINGLE-MACHINE MODEL PARALLEL BEST PRACTICES](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
 
 **3.2.1.1.2 Tensorflow**  
 A good reference for performance comparison can be found [here](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/173).  
