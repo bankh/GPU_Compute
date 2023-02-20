@@ -43,7 +43,7 @@ ToDo: Will be added in the future.
 **GPUs:**  
 AMDs:
   6x AMD Radeon RX580 (8 Gb)  
-  2x AMD Inception MI125 (16Gb)
+  2x AMD Inception MI125 (16Gb)  
 Nvidia:
   
 **RAM:** 256 Gb DDR4 3200Mhz  
