@@ -41,7 +41,7 @@ ToDo: Will be added in the future.
 ### 3.1 Hardware
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
-AMDs:
+AMDs:  
   6x AMD Radeon RX580 (8 Gb)  
   2x AMD Inception MI125 (16Gb)  
 Nvidia:
