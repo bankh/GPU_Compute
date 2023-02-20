@@ -1,3 +1,5 @@
+ToDo: Add Table of Contents
+
 # GPU Compute
 This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs (Polaris gfx8xx) and their platforms (e.g. ROCm). Over time, information about Nvidia GPUs will also be added.
 
@@ -33,11 +35,17 @@ A reference of the GPU comparisons from GPUeater's webpage (relatively old data)
 ![GPUeater screenshot by AIeater](https://github.com/bankh/GPU_Compute/blob/main/images/GPUeater_comparison.png?raw=true)
 
 ### 2.2 CUDA
+ToDo: Will be added in the future.
 
 ## 3. Test System
 ### 3.1 Hardware
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
-**GPU:** Multiple RX580 (8 Gb)  
+**GPUs:**  
+AMDs:
+  6x AMD Radeon RX580 (8 Gb)  
+  2x AMD Inception MI125 (16Gb)
+Nvidia:
+  
 **RAM:** 256 Gb DDR4 3200Mhz  
 **Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
 
