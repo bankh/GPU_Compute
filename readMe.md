@@ -42,8 +42,8 @@ ToDo: Will be added in the future.
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
 AMDs:  
-  6x AMD Radeon RX580 (8 Gb)  
-  2x AMD Inception MI125 (16Gb)  
+  6x AMD Radeon RX580 (8 Gb each)  
+  2x AMD Inception MI25 (16Gb each)  
 Nvidia:
   
 **RAM:** 256 Gb DDR4 3200Mhz  
@@ -74,7 +74,7 @@ $ git clone https://github.com/pytorch/examples
 $ cd examples/mnist
 $ python3 main.py --no-mps
 ```  
-MNIST Result (ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
+MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./images/mnist_rocm43.png)
 
 **b - Multi GPU**  
