@@ -8,6 +8,7 @@
 | libmcwamp.so| | hcc | rocm |	ImportError: libmcwamp.so: cannot open shared object file: No such file or directory |
 | libmcwamp.so.2| | hcc |	rocm>=2.8	| ImportError: libmcwamp.so.2: cannot open shared object file: No such file or directory |
 | libmcwamp.so.3| | hcc |	rocm>=3.0 |	ImportError: libmcwamp.so.3: cannot open shared object file: No such file or directory |
+| libstdc++.so.6| |     | rocm4.0.1 | ImportError: /lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29' not found  |
 
 **symbol error to whl**
 
