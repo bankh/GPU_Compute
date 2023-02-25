@@ -15,12 +15,19 @@ $ git submodule update --init --recursive
 __Remark:__ Please make sure that you setup the appropriate version of the Pytorch on this step that you plan to install for the Docker container. Otherwise, especially for the legacy versions (e.g., Pytorch 1.6), the later steps will utilize more recent libraries and the generated Docker image will have issues. Therefore, it is important to use the same version of the Pytorch and changing the version (e.g., `1.6`). 
 
 
-**2-** Build the PyTorch Docker image:  
-Below the build sample is __Ubuntu 18.04 Bionic for ROCm3.5 and Python 3.8__.  
+**2-** Build the PyTorch Docker image (in Python folder that we pulled from GH):  
+Below the build sample is __Ubuntu 18.04 Bionic for ROCm3.5 and Python 3.8__ for RX580 (gfx803).  
 ```
 $ cd .circleci/docker
 $ ./build.sh pytorch-linux-bionic-rocm3.5-py3.8
 ```
+__Remark:__ This installation will be problematic for MI25(gfx900). The following command would be useful for that GPU:
+```
+$ cd .circleci/docker]
+$ ./build.sh pytorch-linux-focal-rocm4.0.1-py3.8
+```
+This installation has some problems in later stages. There is a known patch of rocm4.0.1 with PyTorch. One can find the details in this (link)[https://github.com/pytorch/pytorch/commit/51526332583ceaebdeef697322a9a8b2b20427f3]
+
 This should be complete with a message, "Successfully build."  
 
 **3-** Check the existence of the Docker image on the host system:  
@@ -69,6 +76,10 @@ $ rocminfo | grep gfx
 **b.** Setup the compiler for a specific hardware architecture (e.g., gfx803 for Polaris cards RX580):
 ```
 $ export PYTORCH_ROCM_ARCH=gfx803
+```
+For MI25(gfx900)  
+```
+$ export PYTORCH_ROCM_ARCH=gfx900
 ```
 
 **c.**  Hippify (converting AMD compatible form) the Pytorch files, compile, and install the library.
