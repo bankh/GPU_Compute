@@ -23,7 +23,7 @@ $ ./build.sh pytorch-linux-bionic-rocm3.5-py3.8
 ```
 __Remark:__ This installation will be problematic for MI25(gfx900). The following command would be useful for that GPU:
 ```
-$ cd .circleci/docker]
+$ cd .circleci/docker
 $ ./build.sh pytorch-linux-focal-rocm4.0.1-py3.8
 ```
 This installation has some problems in later stages. There is a known patch of rocm4.0.1 with PyTorch. One can find the details in this [link](https://github.com/pytorch/pytorch/commit/51526332583ceaebdeef697322a9a8b2b20427f3)
@@ -73,7 +73,8 @@ $ git submodule update --init --recursive
 $ rocminfo | grep gfx
 ```
 
-**b.** Setup the compiler for a specific hardware architecture (e.g., gfx803 for Polaris cards RX580):
+**b.** Setup the compiler for a specific hardware architecture  
+For RX580(gfx803):
 ```
 $ export PYTORCH_ROCM_ARCH=gfx803
 ```
@@ -84,7 +85,7 @@ $ export PYTORCH_ROCM_ARCH=gfx900
 
 **c.**  Hippify (converting AMD compatible form) the Pytorch files, compile, and install the library.
 ```
-$ python3 tools/amd\_build/build\_amd.py
+$ python3 tools/amd_build/build_amd.py
 $ USE_ROCM=1 MAX_JOBS=$(nproc) python3 setup.py install --user  #Remark to consider to use less core in MAX_JOBS
 ```
 
