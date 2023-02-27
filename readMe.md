@@ -3,10 +3,10 @@ ToDo: Add Table of Contents
 # GPU Compute
 This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs (Polaris gfx8xx) and their platforms (e.g. ROCm). Over time, information about Nvidia GPUs will also be added.
 
-## 1. Hardware
+## 1. Hardware  
 The field of GPU computation has been experiencing significant advancements in recent years, driven by the increasing demand for high-performance computing solutions. At the forefront of this progress are two leading companies in the GPU market, Nvidia and AMD. Nvidia GPUs are known for their powerful performance and robust software ecosystem, while AMD GPUs offer a compelling combination of affordability and performance. Whether you are a seasoned veteran or just starting out, this guide will provide you with the information you might find useful to make informed decisions about the hardware you use for your computational needs.
 
-### 1.1 AMD-based GPUs
+### 1.1 AMD-based GPUs  
 AMD-based GPUs are a powerful and flexible choice for GPU computing, offering high performance, scalability, and a rich ecosystem of tools and libraries. However, it's important for developers to be mindful of the challenges and limitations that may arise when using these GPUs, and to choose the best platform and tools to suit their specific needs.
 
 ### 1.2 NVidia-based GPUs
@@ -39,14 +39,11 @@ The same issues arises that AMD ROCM system has with CUDA. Updates and changes o
 
 ## 3. Test Systems
 ### 3.1 Hardware
-**a) ROCM/AMD**
+**a) ROCM/AMD**  
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
-AMDs:  
   6x AMD Radeon RX580 (8 Gb each)  
-  2x AMD Inception MI25 (16Gb each)  
-Nvidia:
-  
+  2x AMD Inception MI25 (16Gb each)   
 **RAM:** 256 Gb DDR4 3200Mhz  
 **Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
 
@@ -54,10 +51,15 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/images/test_hardware.png?raw=true)
 
-**b) Cuda/NVidia**
-- LambdaClouds System
+**b) Cuda/NVidia**  
+- (LambdaClouds)[https://cloud.lambdalabs.com/instances] System (1xA10)  
+**CPU:** Intel Xeon Platinum 8358 CPU @ 2.60 GHz  
+**GPU:** 1x NVidia A10 (24 GB)  
+**RAM:** 200 GiB  
+**HDD:** 1.4 TiB  
 
 ### 3.2 Software  
+Irrespective of the hardware from section 3.1, below are the information for the software that is setup for the benchmark in the next section:  
 **OS:** Linux 20.04.5 LTS (focal)  
 **Kernel:** 5.15.0.58-generic  
 **Python:** 3.8.10  
