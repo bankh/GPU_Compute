@@ -35,10 +35,11 @@ A reference of the GPU comparisons from GPUeater's webpage (relatively old data)
 ![GPUeater screenshot by AIeater](https://github.com/bankh/GPU_Compute/blob/main/images/GPUeater_comparison.png?raw=true)
 
 ### 2.2 CUDA
-ToDo: Will be added in the future.
+The same issues arises that AMD ROCM system has with CUDA. Updates and changes of the dependencies, libraries, and hardware make it difficult to develop solutions by using GPU computation for deep learning applications. Therefore, in enterprise level there are solutions such as using cloud platforms, kubernetes, and other devop solutions. For researchers or deep learning studies, it becomes a problem to develop solutions due to lack of support. Therefore, for AMD's ROCM case we utilize Docker containers to ease this preparations. However, preparing right structure in a framework would ease the step of compatibility for the general user. With that, we added here a specific open-source framework, [Cresset](https://github.com/cresset-template/cresset), that could be useful CUDA based machine learning efforts while still using familiar Docker as a platform. 
 
-## 3. Test System
+## 3. Test Systems
 ### 3.1 Hardware
+**a) ROCM/AMD**
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
 AMDs:  
@@ -52,6 +53,9 @@ Nvidia:
 __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the on-board graphics output switch (by default on). 
 
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/images/test_hardware.png?raw=true)
+
+**b) Cuda/NVidia**
+- LambdaClouds System
 
 ### 3.2 Software  
 **OS:** Linux 20.04.5 LTS (focal)  
