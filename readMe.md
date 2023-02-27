@@ -42,9 +42,9 @@ The same issues arises that AMD ROCM system has with CUDA. Updates and changes o
 **a) ROCM/AMD**  
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
-  6x AMD Radeon RX580 (8 Gb each)  
-  2x AMD Inception MI25 (16Gb each)   
-**RAM:** 256 Gb DDR4 3200Mhz  
+  6x AMD Radeon RX580 (8GB each)  
+  2x AMD Inception MI25 (16GB each)   
+**RAM:** 256 GB DDR4 3200Mhz  
 **Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
 
 __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the on-board graphics output switch (by default on). 
@@ -55,8 +55,8 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 - [LambdaClouds](https://cloud.lambdalabs.com/instances) System (1xA10)  
 **CPU:** Intel Xeon Platinum 8358 CPU @ 2.60 GHz  
 **GPU:** 1x NVidia A10 (24 GB)  
-**RAM:** 200 GiB  
-**HDD:** 1.4 TiB  
+**RAM:** 200 GB  
+**HDD:** 1.4 TB  
 
 ### 3.2 Software  
 Irrespective of the hardware from section 3.1, below are the information for the software that is setup for the benchmark in the next section:  
