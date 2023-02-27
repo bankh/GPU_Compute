@@ -52,7 +52,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/images/test_hardware.png?raw=true)
 
 **b) Cuda/NVidia**  
-- (LambdaClouds)[https://cloud.lambdalabs.com/instances] System (1xA10)  
+- [LambdaClouds](https://cloud.lambdalabs.com/instances) System (1xA10)  
 **CPU:** Intel Xeon Platinum 8358 CPU @ 2.60 GHz  
 **GPU:** 1x NVidia A10 (24 GB)  
 **RAM:** 200 GiB  
