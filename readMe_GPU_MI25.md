@@ -12,9 +12,7 @@ The current solution is similar to the one that one can find here (not the contr
 {ADD IMAGE HERE}
 
 - Upgrading BIOS of MI25:  
-We upgraded and tested our MI25 with different GPUs (see the table below). We utilize a Linux computer with AMDVBFlash by using following command set. Among different references, we found
-another github account useful for downloading the flash tool. In the case of the removal of that tool from GitHub, we will provide the flashtool with a private 
-link by request.
+We upgraded and tested our MI25 with different GPUs (see the table below). We utilize a Linux computer with AMDVBFlash by using following command set. Among different references, we found [another github account](https://github.com/stylesuxx/amdvbflash) useful for downloading the flash tool. In the case of the removal of that tool from GitHub, we will provide the flashtool with a private link by request.
 
 ```
 {Add how to save existing BIOS from the card} # Read remark 
