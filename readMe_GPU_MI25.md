@@ -26,7 +26,7 @@ Our intention by using MI25 is taking advantage of its graphics architecture whi
 update you can use the display port (mini HDMI) of MI25 that is caged inside the chassis bracket. Below are the IDs of the ROM files with their prospective links 
 and our test results:
 
-{Add the table}
+{Add the table}  
 [AMD Radeon RX Vega 64](https://www.techpowerup.com/gpu-specs/radeon-rx-vega-64.c2871) - [BIOS 220W](https://www.techpowerup.com/vgabios/197023/amd-rxvegafe-16384-170628](https://www.techpowerup.com/vgabios/196039/amd-rxvega64-16384-170616-1))  
 [AMD Radeon RX Vega 64](https://www.techpowerup.com/gpu-specs/radeon-rx-vega-64.c2871) - [FE BIOS 264W](https://www.techpowerup.com/vgabios/197023/amd-rxvegafe-16384-170628)  
 [AMD Radeon Pro WX 9100](https://www.techpowerup.com/gpu-specs/radeon-pro-wx-9100.c2989) - [BIOS](https://www.techpowerup.com/vgabios/218718/218718)  
