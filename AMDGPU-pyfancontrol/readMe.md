@@ -15,7 +15,12 @@ In AMDGPU's implementation, an 8-bit representation (0-255 as decimal) correspon
 To test the initial control of the card, we can use the following script,   
 ```
 cat /sys/class/drm/card1/device/hwmon/hwmon*/temp1_input
+cat /sys/class/drm/card1/device/hwmon/hwmon*/pwm1_enable
 cat /sys/class/drm/card1/device/hwmon/hwmon*/pwm1
+```
+__Note:__ You can use the following command to find the appropriate card for testing with the commands above.
+```
+sudo find /* -name 'temp1_input'
 ```
 
 ### Setup/ Installation of the AMDGPU Fan Control
