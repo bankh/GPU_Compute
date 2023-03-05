@@ -19,8 +19,8 @@ cat /sys/class/drm/card1/device/hwmon/hwmon*/pwm1
 ```
 
 ### Setup/ Installation of the AMDGPU Fan Control
-We can follow the following steps to install amdgpu-fancontrol. We utilize this method
-from [another github repository](https://github.com/grmat/amdgpu-fancontrol). 
+We can follow the following steps to install amdgpu-fancontrol. One can utilize alternative methods
+from [another github repository](https://github.com/grmat/amdgpu-fancontrol) by using bash scripts instead of Python script. 
 
 0- First clone the repository:  
 ```
