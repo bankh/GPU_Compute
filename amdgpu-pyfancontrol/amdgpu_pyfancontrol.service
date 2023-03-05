@@ -1,0 +1,11 @@
+[Unit]
+Description=My AMD fan control service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/ubuntu/software/amdgpu-pyfancontrol/amdgpu_fancontrol.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
