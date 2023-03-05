@@ -7,7 +7,7 @@ There should be more elegant solution to avoid heating issue. For now, we connec
 
 {ADD IMAGE HERE}
 
-2- Upgrading BIOS of MI25:  
+2- Upgrading BIOS:  
 We upgraded and tested our MI25 with different BIOS rom(see the table below). We utilize a Linux computer with AMDVBFlash by using following commands. Among different references, we found [another github account](https://github.com/stylesuxx/amdvbflash) useful for downloading the flash tool. In the case of the deletion of AMDvbFlash from the link, we will provide the flashtool with a private link by request.
 ```
 {Add how to save existing BIOS from the card} # Read remark 
