@@ -29,8 +29,8 @@ from [another github repository](https://github.com/grmat/amdgpu-fancontrol) by 
 
 **System's Features:**  
 OS: Ubuntu 20.04 (Focal) (Check with command `lsb_release -a`)  
-Kernel: Linux 5.15.0-67-generic #74~20.04.1-Ubuntu x86_64 x86_64 x86_64 GNU/Linux (Check with command `uname -a`)
-Python version: 3.8 (Check with command 'python --version')
+Kernel: Linux 5.15.0-67-generic #74~20.04.1-Ubuntu x86_64 x86_64 x86_64 GNU/Linux (Check with command `uname -a`)  
+Python version: 3.8 (Check with command 'python --version')  
 
 0- First clone the repository:  
 ```
