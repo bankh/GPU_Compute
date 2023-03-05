@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/ubuntu/software/amdgpu-pyfancontrol/amdgpu_fancontrol.py
+ExecStart=/usr/bin/python3 /home/ubuntu/software/amdgpu-pyfancontrol/amdgpu_pyfancontrol.py
 Restart=on-abort
 
 [Install]
