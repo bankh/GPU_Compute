@@ -26,7 +26,7 @@ from [another github repository](https://github.com/grmat/amdgpu-fancontrol).
 ```
 git clone https://github.com/bankh/GPU_Compute.git
 ```
-__Note:__ The scripts are in `./amdgpu_pyfancontrol/`.
+__Note:__ The scripts are in [`./amdgpu_pyfancontrol/`](https://github.com/bankh/GPU_Compute/tree/main/amdgpu-pyfancontrol).
 
 1- Create a new systemd service unit file by running the following command:
 ```
@@ -47,7 +47,7 @@ Restart=on-abort
 WantedBy=multi-user.target
 
 ```
-__Remark:__ Replace "/path/to/myfancontrol.py" with the actual path to your fan control script. In this exammple python file is amdgpu_pyfancontrol.py.
+__Remark:__ Replace "/path/to/myfancontrol.py" with the actual path to your fan control script. In this example, the python file is [amdgpu_pyfancontrol.py](https://github.com/bankh/GPU_Compute/blob/main/amdgpu-pyfancontrol/amdgpu_fancontrol.py).
 
 3- Reload the systemd daemon to pick up the new service unit file by running the following command:
 ```
