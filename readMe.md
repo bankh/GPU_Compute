@@ -1,4 +1,4 @@
-ToDo: Add Table of Contents
+{ToDo: Add Table of Contents}
 
 # GPU Compute
 This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs (Polaris gfx8xx) and their platforms (e.g. ROCm). Over time, information about Nvidia GPUs will also be added.
@@ -18,7 +18,6 @@ Nvidia-based GPUs offer a powerful and flexible platform for high-performance co
 One of the major challenges in the software arena is the incompatibility between different versions of platforms, drivers, and libraries. This results in significant changes in existing architecture (programs built using these libraries) when transitioning to a new version of the platform (such as ROCm or CUDA). ROCm, for instance, has comparatively limited support and appears more unstable than the CUDA structure of NVIDIA. For example, AMD GPU support is shorter compared to the support provided by NVIDIA. However, there could be various reasons for this, such as a shortage of personnel to handle the programming workload or frequent drastic changes in products (such as gfx8xx, gfx9xx, gfx10xx, RDNA, etc.).
 
 ### 2.1 ROCm
-
 #### 2.1.1 Installation Process
 ##### 2.1.1.1 Docker Images
 The current process of installing Docker is relatively straightforward and offers flexibility in overcoming compatibility issues between platforms, drivers, and libraries. Simply install the desired version of the target platform, driver, and libraries. Then use whichever docker image is appropriate for the purpose without changing much in the host system. An evaluation is necessary to see the difference between Docker installations as well. 
