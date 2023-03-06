@@ -71,9 +71,9 @@ Irrespective of the hardware from section 3.1, below are the information for the
 It is crucial to evaluate the hardware and software using a standardized architecture. The following results showcase the performance of hardware from two widely recognized frameworks, along with some of their benchmark results obtained from their respective Github repositories.
 
 **3.2.1.1.1 Pytorch**  
-**a - Single GPU**  
 [Pytorch/examples repository](https://github.com/pytorch/examples) is one of the great references to see the performance of the current hardware and software.  
 
+**a - Single GPU**  
 __MNIST__  
 ```
 $ git clone https://github.com/pytorch/examples
