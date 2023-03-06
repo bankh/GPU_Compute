@@ -13,7 +13,7 @@ __Note:__ You can use the following command to find the appropriate card for tes
 ```
 sudo find /* -name 'temp1_input'
 ```
-### Setup/ Installation of the AMDGPU Fan Control
+### Setup and Installation of the AMDGPU Fan Control
 We can follow the steps below to install amdgpu-fancontrol. One can utilize alternative methods
 from [another github repository](https://github.com/grmat/amdgpu-fancontrol) by using bash scripts instead of Python script. 
 
@@ -28,38 +28,42 @@ git clone https://github.com/bankh/GPU_Compute.git
 ```
 __Note:__ The scripts are in [`./amdgpu_pyfancontrol/`](https://github.com/bankh/GPU_Compute/tree/main/amdgpu-pyfancontrol).
 
-1- Create a new systemd service unit file by running the following command:
+1- Copy `amdgpu_pyfancontrol.service` to `/etc/systemd/system` by following commands:
 ```
-sudo nano /etc/systemd/system/amdgpu_pyfancontrol.service
+sudo cp /path/to/AMDGPU-pyfancontrol/amdgpu_pyfancontrol.service /etc/systemd/system
 ```
-2- In the editor, add the following lines to define the service unit and save/exit from the editor:
-```
-[Unit]
-Description=My AMD fan control service
-After=multi-user.target
+> a) **Or alternatively,** create a new systemd service unit file by running the following command:
+  ```
+  sudo nano /etc/systemd/system/amdgpu_pyfancontrol.service
+  ```
+> b) In the editor, add the following lines to define the service unit and save/exit from the editor:
+  ```
+  [Unit]
+  Description=My AMD fan control service
+  After=multi-user.target
 
-[Service]
-Type=simple
-ExecStart=/usr/bin/python3 /path/to/myfancontrol.py
-Restart=on-abort
+  [Service]
+  Type=simple
+  ExecStart=/usr/bin/python3 /path/to/myfancontrol.py
+  Restart=on-abort
 
-[Install]
-WantedBy=multi-user.target
+  [Install]
+  WantedBy=multi-user.target
 
-```
-__Remark:__ Replace "/path/to/myfancontrol.py" with the actual path to your fan control script. In this example, the python file is [amdgpu_pyfancontrol.py](https://github.com/bankh/GPU_Compute/blob/main/amdgpu-pyfancontrol/amdgpu_fancontrol.py).
+  ```
+> __Remark:__ Replace "/path/to/myfancontrol.py" with the actual path to your fan control script. In this example, the python file is [amdgpu_pyfancontrol.py](https://github.com/bankh/GPU_Compute/blob/main/amdgpu-pyfancontrol/amdgpu_fancontrol.py).
 
-3- Reload the systemd daemon to pick up the new service unit file by running the following command:
+2- Reload the systemd daemon to pick up the new service unit file by running the following command:
 ```
 sudo systemctl daemon-reload
 ```
 
-4- Enable the service to start at boot time by running the following command:
+3- Enable the service to start at boot time by running the following command:
 ```
 sudo systemctl enable amdgpu_pyfancontrol.service
 ```
 
-5- Start the service by running the following command:
+4- Start the service by running the following command:
 ```
 sudo systemctl start amdgpu_pyfancontrol.service
 ```
