@@ -39,7 +39,7 @@ The same issues arises that AMD ROCM system has with CUDA. Updates and changes o
 
 ## 3. Test Systems
 ### 3.1 Hardware
-**a) ROCM/AMD**  
+**a) AMD/ROCM**  
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
   6x AMD Radeon RX580 (8GB each)  
@@ -51,7 +51,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/images/test_hardware.png?raw=true)
 
-**b) Cuda/NVidia**  
+**b) NVidia/CUDA**  
 - [LambdaClouds](https://cloud.lambdalabs.com/instances) System (1xA10)  
 **CPU:** Intel Xeon Platinum 8358 CPU @ 2.60 GHz  
 **GPU:** 1x NVidia A10 (24 GB)  
