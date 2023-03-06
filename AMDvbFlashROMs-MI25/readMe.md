@@ -3,7 +3,7 @@ There are two main prospects to use MI25 with better performance:
 
 1- Heating:  
 Depending on the type of the BIOS, the heating of MI25 would be a problem. The unit comes with passive cooling attached on the graphics processor and has a GPU fan connection at the end of the GPU. Depending on the BIOS, the function of the fan might change. In other words, in one of the BIOS (id: X), GPU will not show any indication of the fan on `rocm-smi` and another one (id: Y), GPU will show that indication. In both cases `rocm-smi --setfan LEVEL` does not work.  
-There should be more elegant solution to avoid heating issue. For now, we connected multiple fans without modifying the graphics card's mechanical structure while using a fan shrouds from here{Add ebay link} with appropriate connectors, cables, and fans. In addition, we present in this repository [a Python solution](https://github.com/bankh/GPU_Compute/tree/main/amdgpu-pyfancontrol) for cooling GPU based on the PWM and GPUs temperature curve.
+For now, we connected multiple fans without modifying the graphics card's mechanical structure while using a fan shrouds from here{Add ebay link} with appropriate connectors, cables, and fans. In addition, we present in this repository [a Python solution](https://github.com/bankh/GPU_Compute/tree/main/amdgpu-pyfancontrol) for cooling GPU based on the PWM and GPUs temperature curve.
 
 {ADD IMAGE HERE}
 
