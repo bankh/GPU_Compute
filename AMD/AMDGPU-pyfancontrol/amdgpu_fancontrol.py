@@ -10,7 +10,7 @@ temp_thresholds = [20, 50, 70]  # in degrees Celsius
 pwm_values = [0, 128, 255]      # as a percentage of full speed
 
 # Define the update interval and the minimum and maximum PWM values
-update_interval = 5  # in seconds
+update_interval = 2  # in seconds
 min_pwm = 20
 max_pwm = 255
 
