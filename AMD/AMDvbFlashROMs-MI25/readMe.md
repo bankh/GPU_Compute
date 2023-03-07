@@ -27,3 +27,7 @@ Our intention by using MI25 is taking advantage of its graphics architecture whi
 3- Some Applications (Use Cases)  
 
 **Stable Diffusion:** There are some [references](https://forum.level1techs.com/t/mi25-stable-diffusions-100-hidden-beast/194172/19) that we found as an application of one of the popular generative AI on MI25 by upgrading its BIOS.
+
+**Disclaimer:**
+We make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on this repository. We will not be liable for any errors or omissions in this information nor for the availability of this information. We will not be liable for any losses, injuries, or damages from the display or use of this information. Your use of this information is at your own risk.
+
