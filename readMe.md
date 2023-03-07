@@ -82,7 +82,7 @@ $ cd examples/mnist
 $ python3 main.py --no-mps
 ```  
 MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
-![MNIST result rocm4.3](./images/mnist_rocm43.png)
+![MNIST result rocm4.3](./Media/mnist_rocm43.png)
 
 **b - Multi GPUs**  
 References:  
