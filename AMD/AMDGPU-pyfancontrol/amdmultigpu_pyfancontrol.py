@@ -6,7 +6,7 @@ import glob
 # Here, we have multiple cards as AMDGPUs in our system.
 pwm_path_template = "/sys/class/drm/card{}/device/hwmon/hwmon{}/pwm1"
 pwm_enable_template = "/sys/class/drm/card{}/device/hwmon/hwmon{}/pwm1_enable"
-temp_files_template = "/sys/class/drm/card{}/device/hwmon/hwmon{}/temp1_input"
+temp_files_template = "/sys/class/drm/card{}/device/hwmon/hwmon{}/*_input"
 
 # Define the temperature thresholds and corresponding PWM values for all cards
 temp_thresholds = [30, 50, 70]  # in degrees Celsius
@@ -18,9 +18,9 @@ min_pwm = 20
 max_pwm = 255
 
 # Define the function to get the current GPU temperature for all cards
-def get_temperature():
+def get_temperature(i):
     temp_list = []
-    for i, temp_file in enumerate(glob.glob(temp_files_template.format("*", "*"))):
+    for temp_file in glob.glob(temp_files_template.format(i+1, "*")):
         with open(temp_file, "r") as f:
             temp_str = f.readline().strip()
             temp = int(temp_str) / 1000.0  # convert to degrees Celsius
@@ -43,12 +43,18 @@ def get_pwm_value(temp_list, card_idx):
 
 # Define the main loop to update the fan speed for all cards
 while True:
-    temp_list = get_temperature()
-    for i, temp in enumerate(temp_list):
-        pwm = get_pwm_value(temp_list, i)
-        pwm_path = pwm_path_template.format(i, i+2)
-        pwm_enable = pwm_enable_template.format(i, i+2)
-        os.system("echo {}".format(pwm))
-        os.system("sudo echo 1 > {}".format(pwm_enable))
-        os.system("sudo echo {} > {}".format(pwm, pwm_path))
+    for i in range(8):
+        temp_list = get_temperature(i)
+        for j, temp in enumerate(temp_list):
+            hwmon_list = glob.glob(temp_files_template.format(i+1, "*"))
+            if not hwmon_list:
+                continue
+            hwmon = hwmon_list[0]
+            pwm = get_pwm_value(temp_list, j)
+            hwmon_num = hwmon.split("/")[-2][5:]
+            pwm_path = pwm_path_template.format(i+1, hwmon_num)
+            pwm_enable = pwm_enable_template.format(i+1, hwmon_num)
+            os.system("echo {}".format(pwm))
+            os.system("sudo echo 1 > {}".format(pwm_enable))
+            os.system("sudo echo {} > {}".format(pwm, pwm_path))
     time.sleep(update_interval)
