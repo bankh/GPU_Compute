@@ -1,7 +1,8 @@
 import os
 import time
 
-# Define the path to the PWM interface
+# Define the path to the PWM interface 
+# Here we have card1 as AMDGPU in our system.
 pwm_path = "/sys/class/drm/card1/device/hwmon/hwmon3/pwm1"
 pwm_enable = "/sys/class/drm/card1/device/hwmon/hwmon3/pwm1_enable"
 
