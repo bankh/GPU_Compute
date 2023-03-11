@@ -40,6 +40,7 @@ The same issues arises that AMD ROCM system has with CUDA. Updates and changes o
 
 ## 3. Test Systems
 ### 3.1 Hardware
+[Reference sample systems from Bizon](https://bizon-tech.com/bizon-zx5500.html#1385:11079;1387:9033;1388:9039;1389:9045;1393:11073)  
 **a) AMD/ROCM**  
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
@@ -87,6 +88,7 @@ MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 **b - Multi GPUs**  
 References:  
 - [IOMMU Advisory for Multi-GPU Environments](https://community.amd.com/t5/knowledge-base/iommu-advisory-for-multi-gpu-environments/ta-p/477468) [1](https://forums.developer.nvidia.com/t/parallel-training-with-4-cards-4090-cannot-be-performed-on-amd-5975wx-stuck-at-the-beginning/237813/3), [2](https://forums.developer.nvidia.com/t/multi-gpu-peer-to-peer-access-failing-on-tesla-k80/39748/12)  
+In the current BIOS, we disabled SVM and IOMMU as suggested. We also reduced PCIx Latency from 64 bits to 32 bits.  
 - [Getting Started with Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
 - [SINGLE-MACHINE MODEL PARALLEL BEST PRACTICES](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
 - [PCIe X16 vs X8 with 4 x Titan V GPUs for Machine Learning](https://www.pugetsystems.com/labs/hpc/PCIe-X16-vs-X8-with-4-x-Titan-V-GPUs-for-Machine-Learning-1167/)
