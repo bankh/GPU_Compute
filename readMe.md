@@ -86,6 +86,7 @@ MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 
 **b - Multi GPUs**  
 References:  
+- [IOMMU Advisory for Multi-GPU Environments](https://community.amd.com/t5/knowledge-base/iommu-advisory-for-multi-gpu-environments/ta-p/477468)
 - [Getting Started with Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
 - [SINGLE-MACHINE MODEL PARALLEL BEST PRACTICES](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
 - [PCIe X16 vs X8 with 4 x Titan V GPUs for Machine Learning](https://www.pugetsystems.com/labs/hpc/PCIe-X16-vs-X8-with-4-x-Titan-V-GPUs-for-Machine-Learning-1167/)
