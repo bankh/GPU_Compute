@@ -13,11 +13,11 @@ __Note:__ You can use the following command to find the appropriate card for tes
 ```
 sudo find /* -name 'temp1_input'
 ```
-### Setup and Installation of the AMDGPU Fan Control
+### Setup and Installation of the AMDGPU Fan Control ([Please See Hardware](https://github.com/bankh/GPU_Compute/blob/main/AMD/AMD_MI25_Hardware/readMe.md))  
 We can follow the steps below to install amdgpu-fancontrol. One can utilize alternative methods
 from [another github repository](https://github.com/grmat/amdgpu-fancontrol) by using bash scripts instead of Python script. 
 
-**System's Features:**  
+**System's Features:**
 OS: Ubuntu 20.04 (Focal) (Check with command from the terminal `lsb_release -a`)  
 Kernel: Linux 5.15.0-67-generic #74~20.04.1-Ubuntu x86_64 x86_64 x86_64 GNU/Linux (Check with command from the terminal `uname -a`)  
 Python version: 3.8 (Check with command from the terminal `python --version`)  
