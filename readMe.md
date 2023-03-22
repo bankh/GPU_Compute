@@ -44,8 +44,8 @@ The same issues arises that AMD ROCM system has with CUDA. Updates and changes o
 **a) AMD/ROCM**  
 **CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 **GPUs:**  
-  6x AMD Radeon RX580 (8GB each)  
-  [AMD Inception MI25 (16GB each)](https://github.com/bankh/GPU_Compute/blob/main/AMD/AMDGPU-pyfancontrol/readMe.md)   
+  AMD Radeon RX580 (8GB each)  
+  [AMD Radeon Instinct MI25 (16GB each)](https://github.com/bankh/GPU_Compute/blob/main/AMD/AMDGPU-pyfancontrol/readMe.md)   
 **RAM:** 256 GB DDR4 3200Mhz  
 **Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
 
