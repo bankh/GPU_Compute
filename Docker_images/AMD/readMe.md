@@ -49,7 +49,7 @@ $ docker run -it --cap-add=SYS_PTRACE \
 --security-opt seccomp=unconfined \
 --device=/dev/kfd \
 --device=/dev/dri \
---group-add $(getent group render | cut -d':' -f 3) ]
+--group-add $(getent group render | cut -d':' -f 3) \
 --ipc=host \
 --shm-size 8G \
 -p 0.0.0.0:6006:6006 \
