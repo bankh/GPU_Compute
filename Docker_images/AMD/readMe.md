@@ -67,7 +67,7 @@ docker run -it --cap-add=SYS_PTRACE \
 -v /mnt/data_drive:/mnt/data_drive \
 -p 0.0.0.0:6006:6006 \
 -e DISPLAY=$DISPLAY \
-{IMAGE_ID}
+rocm2.7_ubuntu18.04_py3.6_pytorch
 ```
 
 **5-** Update the address and key for apt repo with `apt update`
