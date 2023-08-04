@@ -27,13 +27,7 @@ AMD-based GPUs are a powerful and flexible choice for GPU computing, offering hi
 ### 1.2 NVidia-based GPUs <a name="12-nvidia-based-gpus"></a> 
 Nvidia-based GPUs offer a powerful and flexible platform for high-performance computing and graphics rendering, making them an excellent choice for a wide range of applications. Whether you are working in scientific simulations, machine learning, or multimedia content creation, Nvidia-based GPUs can help you get the most out of your computing resources.
 
-[Start] -> Get Hardware (AMD/Nvidia GPU)  
-       -> Get Software (ROCm/CUDA, Drivers, Libraries)  
-       -> Setup Environment (Containers, OS, etc)  
-       -> Run Benchmarks  
-       -> Train Models  
-       -> Deploy Models  
-       -> [End]
+[Start] -> Get Hardware (AMD/Nvidia GPU) -> Get Software (ROCm/CUDA, Drivers, Libraries)  -> Setup Environment (Containers, OS, etc)  -> Train Models -> Run Benchmarks  -> Deploy Models  -> [End]
 
 ## 2. Software <a name="2-software"></a>
 One of the major challenges in the software arena is the incompatibility between different versions of platforms, drivers, and libraries. This results in significant changes in existing architecture (programs built using these libraries) when transitioning to a new version of the platform (such as ROCm or CUDA). ROCm, for instance, has comparatively limited support and appears more unstable than the CUDA structure of NVIDIA. For example, AMD GPU support is shorter compared to the support provided by NVIDIA. However, there could be various reasons for this, such as a shortage of personnel to handle the programming workload or frequent drastic changes in products (such as gfx8xx, gfx9xx, gfx10xx, RDNA, etc.).
