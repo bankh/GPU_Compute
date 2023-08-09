@@ -1,4 +1,6 @@
-# Table of Contents
+# Notes and Tools for GPU Computation
+
+## Table of Contents
 
 - [1. Hardware](#1-hardware)
   - [1.1 AMD-based GPUs](#11-amd-based-gpus)
@@ -15,7 +17,6 @@
     - [3.2.1 ROCm](#321-rocm)
       - [3.2.1.1 Benchmarks](#3211-benchmarks)
 
-# GPU Compute
 This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs (Polaris gfx8xx) and their platforms (e.g. ROCm). In the future, information about Nvidia GPUs will also be added.
 
 ## 1. Hardware  <a name="1-hardware"></a>
