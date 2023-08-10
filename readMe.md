@@ -68,7 +68,7 @@ The same issues arise that the AMD ROCM system has with CUDA. Updates and change
 &nbsp;&nbsp;**RAM:** 256 GB DDR4 3200Mhz  
 &nbsp;&nbsp;**Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
 
-__Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the on-board graphics output switch (by default). 
+__Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the on-board graphics output switch (by [default 'off'](https://www.asus.com/us/support/FAQ/1049293/)). 
 
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/Media/test_hardware.png?raw=true)
 
