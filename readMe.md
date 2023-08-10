@@ -19,6 +19,8 @@
 
 This repository will serve as a collection of notes and tools for GPU computation, with an initial emphasis on AMD GPUs (Polaris gfx8xx) and their platforms (e.g. ROCm). In the future, information about Nvidia GPUs will also be added.
 
+![image](https://github.com/bankh/GPU_Compute/assets/9688867/1bdb382c-b51e-4e7b-aead-d0b6175e3462)
+
 ## 1. Hardware  <a name="1-hardware"></a>
 The field of GPU computation has been experiencing significant advancements in recent years, driven by the increasing demand for high-performance computing solutions. At the forefront of this progress are two leading companies in the GPU market, Nvidia and AMD. Nvidia GPUs are known for their powerful performance and robust software ecosystem, while AMD GPUs offer a compelling combination of affordability and performance. Whether you are a seasoned veteran or just starting out, this guide will provide you with the information you might find useful to make informed decisions about the hardware you use for your computational needs.
 
@@ -27,8 +29,6 @@ AMD-based GPUs are a powerful and flexible choice for GPU computing, offering hi
 
 ### 1.2 NVidia-based GPUs <a name="12-nvidia-based-gpus"></a> 
 Nvidia-based GPUs offer a powerful and flexible platform for high-performance computing and graphics rendering, making them an excellent choice for a wide range of applications. Whether you are working in scientific simulations, machine learning, or multimedia content creation, Nvidia-based GPUs can help you get the most out of your computing resources.
-
-![image](https://github.com/bankh/GPU_Compute/assets/9688867/1bdb382c-b51e-4e7b-aead-d0b6175e3462)
 
 ## 2. Software <a name="2-software"></a>
 One of the major challenges in the software arena is the incompatibility between different versions of platforms, drivers, and libraries. This results in significant changes in existing architecture (programs built using these libraries) when transitioning to a new version of the platform (such as ROCm or CUDA). ROCm, for instance, has comparatively limited support and appears more unstable than the CUDA structure of NVIDIA. For example, AMD GPU support is shorter compared to the support provided by NVIDIA. However, there could be various reasons for this, such as a shortage of personnel to handle the programming workload or frequent drastic changes in products (such as gfx8xx, gfx9xx, gfx10xx, RDNA, etc.).
