@@ -43,7 +43,7 @@ The current process of installing Docker is relatively straightforward and offer
 ##### 2.1.1.2 Standard Installation <a name="2112-standard-installation"></a>
 AMD has undergone changes to its documentation system without properly maintaining the previous libraries. For instance, ROCm documentation with some links can be found at [GitHub](https://github.com/RadeonOpenCompute/ROCm/), while another one [here](https://rocmdocs.amd.com/), at yet another [here](https://docs.amd.com/). This repetition in the documentation creates confusion and wastes time for users. To remain competitive in the market, AMD needs to take concrete steps to streamline its documentation and support. For example, irrespective of the reference or option, we have encountered a problem with ROCm 3.7 installations, which experience computational issues with gfx803-based GPUs (such as the RX580). Unfortunately, AMDs solution is cutting the support of this particular product. Fortunately, there are various comments and potential solutions available online related to this and similar issues (gfx900 or gfx1000 series).  
 
-Here, we need to refer some of the good examples of fixing the issues for installation:
+Here, we need to refer to some of the good examples of fixing the issues for installation:
 - [xuhuisheng/rocm-build](https://github.com/xuhuisheng/rocm-build) and [xuhuisheng/rocm-gfx803](https://github.com/xuhuisheng/rocm-gfx803)  
 - rictorp/rocm.md ([gist link](https://gist.github.com/rigtorp/d9483af100fb77cee57e4c9fa3c74245))  
 - [AIeater](https://github.com/aieater/rocm_pytorch_informations) by [GPUeater](https://www.gpueater.com/index.html)
@@ -52,23 +52,23 @@ A reference of the GPU comparisons from GPUeater's webpage (relatively old data)
 ![GPUeater screenshot by AIeater](https://github.com/bankh/GPU_Compute/blob/main/Media/GPUeater_comparison.png?raw=true)
 
 ### 2.2 CUDA  <a name="22-cuda"></a>
-The same issues arises that AMD ROCM system has with CUDA. Updates and changes of the dependencies, libraries, and hardware make it difficult to develop solutions by using GPU computation for deep learning applications. Therefore, in enterprise level there are solutions such as using cloud platforms, kubernetes, and other devop solutions. For researchers or deep learning studies, it becomes a problem to develop solutions due to lack of support. Therefore, for AMD's ROCM case we utilize Docker containers to ease this preparations. However, preparing right structure in a framework would ease the step of compatibility for the general user. With that, we added here a specific open-source framework, [Cresset](https://github.com/cresset-template/cresset), that could be useful CUDA based machine learning efforts while still using familiar Docker as a platform. 
+The same issues arise that the AMD ROCM system has with CUDA. Updates and changes in the dependencies, libraries, and hardware make it difficult to develop solutions by using GPU computation for deep learning applications. Therefore, at the enterprise level, there are solutions such as using cloud platforms, Kubernetes, and other devop solutions. For researchers or deep learning studies, it becomes a problem to develop solutions due to a lack of support. Therefore, for AMD's ROCM case, we utilize Docker containers to ease these preparations. However, preparing the right structure in a framework would ease the step of compatibility for the general user. With that, we added here a specific open-source framework, [Cresset](https://github.com/cresset-template/cresset), that could be useful CUDA based machine learning efforts while still using familiar Docker as a platform. 
 
 ## 3. Test Systems <a name="3-test-systems"></a>
 ### 3.1 Hardware <a name="31-hardware"></a>
 [Reference sample systems from Bizon](https://bizon-tech.com/bizon-zx5500.html#1385:11079;1387:9033;1388:9039;1389:9045;1393:11073)  
 **a) AMD/ROCM**  
-**CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
-**GPUs:**  
-  AMD Radeon RX580 (8GB each)  
-  [AMD Radeon Instinct MI25 (16GB each)](https://github.com/bankh/GPU_Compute/blob/main/AMD/AMDGPU-pyfancontrol/readMe.md)
-      [How to add active cooling hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMD_MI25_Hardware)   
-      [How to add temperature control hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)  
-      [How to change the firmware of AMD_GPUs](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDvbFlashROMs-MI25)  
-**RAM:** 256 GB DDR4 3200Mhz  
-**Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
+&nbsp;&nbsp;**CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
+&nbsp;&nbsp;**GPUs:**  
+&nbsp;&nbsp;&nbsp;&nbsp;AMD Radeon RX580 (8GB each)  
+&nbsp;&nbsp;&nbsp;&nbsp;[AMD Radeon Instinct MI25 (16GB each)](https://github.com/bankh/GPU_Compute/blob/main/AMD/AMDGPU-pyfancontrol/readMe.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;:exclamation:[How to add active cooling hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMD_MI25_Hardware)  
+&nbsp;&nbsp;&nbsp;&nbsp;:exclamation:[How to add temperature control hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)  
+&nbsp;&nbsp;&nbsp;&nbsp;:exclamation:[How to change the firmware of AMD_GPUs](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDvbFlashROMs-MI25)  
+&nbsp;&nbsp;**RAM:** 256 GB DDR4 3200Mhz  
+&nbsp;&nbsp;**Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
 
-__Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the on-board graphics output switch (by default on). 
+__Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the on-board graphics output switch (by default). 
 
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/Media/test_hardware.png?raw=true)
 
