@@ -140,6 +140,19 @@ $ git checkout 0.6.0 # This version (or 0.7.0) is the compatible one with respec
 $ USE_ROCM=1 MAX_JOBS=$(nproc) USE_OPENCV=1 python3 setup.py install --user
 ```
 
+torch_geometric ([__Reference__](https://github.com/pyg-team/pytorch_geometric/discussions/6370))
+```
+$ git clone https://github.com/pyg-team/pytorch_geometric
+$ git clone --recursive https://github.com/rusty1s/pytorch_sparse
+$ git clone https://github.com/rusty1s/pytorch_scatter
+$ cd pytorch_sparse
+$ pip install . -vvv |& tee ~/build_sparse.log
+$ cd ../pytorch_scatter
+$ pip install . -vvv |& tee ~/build_scatter.log
+$ cd ../pytorch_geometric
+$ pip install . -vvv |& tee ~/build_geometric.log
+```
+
 **Reference:**  
 [1] [ROCm Deep Learning Guide v5.3](https://hub.docker.com/r/rocm/pytorch)  
 [2] [Framework Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)
