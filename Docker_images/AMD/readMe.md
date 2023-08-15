@@ -56,6 +56,7 @@ docker run -it \                          # Run a command in interactive mode wi
 --shm-size 8G \                           # Set the size of the shared memory segment to 8GB; useful for certain applications like databases or deep learning frameworks
 -p 0.0.0.0:6006:6006 \                    # Map the container's port 6006 to the host's port 6006; accessible to any IP address on the host system
 -v /mnt/data_drive:/mnt/data_drive \      # Mount the /mnt/data_drive directory from the host to the same path in the container
+-v /home/ubuntu:/mnt/ubuntu \             # Mount the /home/ubuntu directory from the host to /mnt/ubuntu in the container
 pytorch-linux-bionic-rocm3.5-py3.8        # The Docker image name to use, which in this case appears to be a specific PyTorch image built for Ubuntu Bionic with ROCm3.5 and Python 3.8
 ```
 Enabling GPU and Display and make it accessible from host computer:  
@@ -69,6 +70,7 @@ docker run -it \                           # Run a command in interactive mode a
 --group-add $(getent group render | cut -d':' -f 3) \ # Add the container to the 'render' group (usually related to graphics)
 --ipc=host \                              # Use the host's IPC namespace, which can help in certain use-cases like shared memory segments
 -v /mnt/data_drive:/mnt/data_drive \      # Mount the host's /mnt/data_drive directory to the container's /mnt/data_drive directory
+-v /home/ubuntu:/mnt/ubuntu \             # Mount the /home/ubuntu directory from the host to /mnt/ubuntu in the container
 -p 0.0.0.0:6006:6006 \                    # Publish the container's port 6006 to the host's port 6006, making it accessible externally
 -e DISPLAY=$DISPLAY \                     # Pass the DISPLAY environment variable from the host to the container, useful for GUI applications
 rocm2.7_ubuntu18.04_py3.6_pytorch         # The Docker image to use
