@@ -101,6 +101,7 @@ $ export PYTORCH_ROCM_ARCH=gfx900
 
 **c.**  Hippify (converting AMD compatible form) the Pytorch files, compile, and install the library.
 ```
+$ sudo chmod -R 777 ./pytorch/
 $ python3 tools/amd_build/build_amd.py
 $ USE_ROCM=1 MAX_JOBS=$(nproc) python3 setup.py install --user  #Remark to consider to use less core in MAX_JOBS
 ```
