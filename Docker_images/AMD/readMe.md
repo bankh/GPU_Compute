@@ -51,7 +51,7 @@ docker run -it \                          # Run a command in interactive mode wi
 --security-opt seccomp=unconfined \       # Disable the default seccomp security profile, enabling more syscalls in the container
 --device=/dev/kfd \                       # Map the /dev/kfd device to the container (related to AMD ROCm)
 --device=/dev/dri \                       # Map the /dev/dri device to the container (related to graphics rendering)
---group-add $(getent group video | cut -d':' -f 3) \ # Add the container to the 'render' group (usually for graphics purposes)
+--group-add $(getent group video | cut -d':' -f 3) \ # Add the container to the 'video' group (usually for graphics purposes)
 --ipc=host \                              # Share the IPC namespace with the host; useful for inter-process communication between host and container
 --shm-size 8G \                           # Set the size of the shared memory segment to 8GB; useful for certain applications like databases or deep learning frameworks
 -p 0.0.0.0:6006:6006 \                    # Map the container's port 6006 to the host's port 6006; accessible to any IP address on the host system
@@ -67,7 +67,7 @@ docker run -it \                           # Run a command in interactive mode a
 --security-opt seccomp=unconfined \       # Disable the seccomp security profile, allowing the container more syscalls
 --device=/dev/kfd \                       # Pass through the /dev/kfd device to the container (related to AMD ROCm)
 --device=/dev/dri \                       # Pass through the /dev/dri device to the container (related to graphics rendering)
---group-add $(getent group video | cut -d':' -f 3) \ # Add the container to the 'render' group (usually related to graphics)
+--group-add $(getent group video | cut -d':' -f 3) \ # Add the container to the 'video' group (usually related to graphics)
 --ipc=host \                              # Use the host's IPC namespace, which can help in certain use-cases like shared memory segments
 -v /mnt/data_drive:/mnt/data_drive \      # Mount the host's /mnt/data_drive directory to the container's /mnt/data_drive directory
 -v /home/ubuntu:/mnt/ubuntu \             # Mount the /home/ubuntu directory from the host to /mnt/ubuntu in the container
