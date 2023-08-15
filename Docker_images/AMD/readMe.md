@@ -45,29 +45,33 @@ The command above should return `pytorch-linux-bionic-rocm3.5-py3.8` and we can 
 **pytorch-linux-bionic-rocm3.5-py3.8**: Specifies the name of the Docker image to run.  
 
 ```
-$ docker run -it --cap-add=SYS_PTRACE \
---security-opt seccomp=unconfined \
---device=/dev/kfd \
---device=/dev/dri \
---group-add $(getent group render | cut -d':' -f 3) \
---ipc=host \
---shm-size 8G \
--p 0.0.0.0:6006:6006 \
--v /mnt/data_drive:/mnt/data_drive \
-pytorch-linux-bionic-rocm3.5-py3.8
+docker run -it \                          # Run a command in interactive mode with a pseudo-TTY 
+--name my_container_name \                # Assign a name for the container for easy identification
+--cap-add=SYS_PTRACE \                    # Grant the SYS_PTRACE capability to the container (useful for debugging/tracing)
+--security-opt seccomp=unconfined \       # Disable the default seccomp security profile, enabling more syscalls in the container
+--device=/dev/kfd \                       # Map the /dev/kfd device to the container (related to AMD ROCm)
+--device=/dev/dri \                       # Map the /dev/dri device to the container (related to graphics rendering)
+--group-add $(getent group render | cut -d':' -f 3) \ # Add the container to the 'render' group (usually for graphics purposes)
+--ipc=host \                              # Share the IPC namespace with the host; useful for inter-process communication between host and container
+--shm-size 8G \                           # Set the size of the shared memory segment to 8GB; useful for certain applications like databases or deep learning frameworks
+-p 0.0.0.0:6006:6006 \                    # Map the container's port 6006 to the host's port 6006; accessible to any IP address on the host system
+-v /mnt/data_drive:/mnt/data_drive \      # Mount the /mnt/data_drive directory from the host to the same path in the container
+pytorch-linux-bionic-rocm3.5-py3.8        # The Docker image name to use, which in this case appears to be a specific PyTorch image built for Ubuntu Bionic with ROCm3.5 and Python 3.8
 ```
 Enabling GPU and Display and make it accessible from host computer:  
 ```
-docker run -it --cap-add=SYS_PTRACE \
---security-opt seccomp=unconfined \
---device=/dev/kfd \  
---device=/dev/dri \
---group-add $(getent group render | cut -d':' -f 3) \
---ipc=host \
--v /mnt/data_drive:/mnt/data_drive \
--p 0.0.0.0:6006:6006 \
--e DISPLAY=$DISPLAY \
-rocm2.7_ubuntu18.04_py3.6_pytorch
+docker run -it \                           # Run a command in interactive mode and allocate a pseudo-TTY 
+--name my_container_name \                # Set a name for the container to make it easier to reference
+--cap-add=SYS_PTRACE \                    # Grant the container the SYS_PTRACE capability (useful for debugging)
+--security-opt seccomp=unconfined \       # Disable the seccomp security profile, allowing the container more syscalls
+--device=/dev/kfd \                       # Pass through the /dev/kfd device to the container (related to AMD ROCm)
+--device=/dev/dri \                       # Pass through the /dev/dri device to the container (related to graphics rendering)
+--group-add $(getent group render | cut -d':' -f 3) \ # Add the container to the 'render' group (usually related to graphics)
+--ipc=host \                              # Use the host's IPC namespace, which can help in certain use-cases like shared memory segments
+-v /mnt/data_drive:/mnt/data_drive \      # Mount the host's /mnt/data_drive directory to the container's /mnt/data_drive directory
+-p 0.0.0.0:6006:6006 \                    # Publish the container's port 6006 to the host's port 6006, making it accessible externally
+-e DISPLAY=$DISPLAY \                     # Pass the DISPLAY environment variable from the host to the container, useful for GUI applications
+rocm2.7_ubuntu18.04_py3.6_pytorch         # The Docker image to use
 ```
 
 **5-** Update the address and key for apt repo with `apt update`
@@ -80,12 +84,12 @@ $ sudo apt update
 **6-** Pull the Pytorch to the docker container:
 ```
 $ cd ~  
-$ git clone https://github.com/pytorch/pytorch.git  
+# git clone https://github.com/pytorch/pytorch.git  
 $ cd pytorch  
-$ git checkout 1.6
-$ git submodule update --init --recursive
+# git checkout 1.6
+# git submodule update --init --recursive
 ```
-
+__Note:__ '#' for super user mode and '$' is for regular user.  
 **7-** Install the pytorch on the container that is started on step #4.  
 **a.** Determine the <uarch> (architecture) of the graphics card (GPU):
 ```
