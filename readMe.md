@@ -23,14 +23,14 @@ This repository will serve as a collection of notes and tools for GPU computatio
 
 ## 🔩 1. Hardware  <a name="1-hardware"></a>
 The field of GPU computation has been experiencing significant advancements in recent years, driven by the increasing demand for high-performance computing solutions. At the forefront of this progress are two leading companies in the GPU market, Nvidia and AMD. Nvidia GPUs are known for their powerful performance and robust software ecosystem, while AMD GPUs offer a compelling combination of affordability and performance. Whether you are a seasoned veteran or just starting out, this guide will provide you with the information you might find useful to make informed decisions about the hardware you use for your computational needs.  
-
+  
+### 1.1 AMD-based GPUs <a name="11-amd-based-gpus"></a>
+AMD-based GPUs are a powerful and flexible choice for GPU computing, offering high performance, scalability, and a rich ecosystem of tools and libraries. However, it's important for developers to be mindful of the challenges and limitations that may arise when using these GPUs, and to choose the best platform and tools to suit their specific needs.  
+  
 __Read More:__  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMD_MI25_Hardware)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature control hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to change the firmware of AMD_GPUs](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDvbFlashROMs-MI25)❓  
-
-### 1.1 AMD-based GPUs <a name="11-amd-based-gpus"></a>
-AMD-based GPUs are a powerful and flexible choice for GPU computing, offering high performance, scalability, and a rich ecosystem of tools and libraries. However, it's important for developers to be mindful of the challenges and limitations that may arise when using these GPUs, and to choose the best platform and tools to suit their specific needs.
 
 ### 1.2 NVidia-based GPUs <a name="12-nvidia-based-gpus"></a> 
 Nvidia-based GPUs offer a powerful and flexible platform for high-performance computing and graphics rendering, making them an excellent choice for a wide range of applications. Whether you are working in scientific simulations, machine learning, or multimedia content creation, Nvidia-based GPUs can help you get the most out of your computing resources.
