@@ -152,7 +152,9 @@ $ pip install . -vvv |& tee ~/build_scatter.log
 $ cd ../pytorch_geometric
 $ pip install . -vvv |& tee ~/build_geometric.log
 ```
-Alternatively, one can use direct docker image from [rocm/pytorch:latest](https://hub.docker.com/r/rocm/pytorch)
+__Notes:__  
+1- Please make sure the compatibility of the PyTorch version with the corresponding Geometric, Sparse, and Scatter installations.  
+2- Alternatively, one can use direct docker image from [rocm/pytorch:latest](https://hub.docker.com/r/rocm/pytorch)
 
 **Reference:**  
 [1] [ROCm Deep Learning Guide v5.3](https://hub.docker.com/r/rocm/pytorch)  
