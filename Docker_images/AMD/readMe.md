@@ -164,5 +164,5 @@ __Notes:__
 
 **Reference:**  
 [1] [ROCm Deep Learning Guide v5.3](https://hub.docker.com/r/rocm/pytorch)  
-[2] [Framework Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)  
+[2] [Framework Installation](https://docs.amd.com/bundle/ROCm-Deep-Learning-Guide-v5.3/page/Frameworks_Installation.html)  <br/>
 [3] [Some compatible questions when I use ROCm on AMD GPU](https://github.com/pyg-team/pytorch_geometric/discussions/6370)
