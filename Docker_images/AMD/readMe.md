@@ -150,10 +150,12 @@ $ git checkout 0.6.7 # check release or the date of the release to find the matc
 $ pip install . -vvv |& tee ~/build_sparse.log
 $ mv ../build_sparse.log ./
 $ cd ../pytorch_scatter
+$ git checkout 1.4.0
 $ pip install . -vvv |& tee ~/build_scatter.log
 $ mv ../build_scatter.log ./
 $ cd ../pytorch_geometric
-$ pip install . -vvv |& tee ~/build_geometric.log
+$ git checkout 1.6.0
+$ pip install . -vvv |& tee ~/build_geometric.log 
 $ mv ../build_geometric.log ./
 ```
 __Notes:__  
