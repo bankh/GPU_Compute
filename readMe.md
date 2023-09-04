@@ -66,7 +66,7 @@ The same issues arise that the AMD ROCM system has with CUDA. Updates and change
 &nbsp;&nbsp;**CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 &nbsp;&nbsp;**GPUs:**  
 &nbsp;&nbsp;&nbsp;&nbsp;AMD Radeon RX580 (8GB each)  
-&nbsp;&nbsp;&nbsp;&nbsp;[AMD Radeon Instinct MI25 (16GB each)](https://github.com/bankh/GPU_Compute/blob/main/AMD/AMDGPU-pyfancontrol/readMe.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[AMD Radeon Instinct MI25 (16GB each)]([https://github.com/bankh/GPU_Compute/blob/main/AMD/AMDGPU-pyfancontrol/readMe.md](https://www.techpowerup.com/gpu-specs/radeon-instinct-mi25.c2983))  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMD_MI25_Hardware)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature control hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to change the firmware of AMD_GPUs](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDvbFlashROMs-MI25)❓  
