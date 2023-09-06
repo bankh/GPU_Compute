@@ -79,12 +79,12 @@ $ sudo apt update
 $ cd ~  
 # git clone https://github.com/pytorch/pytorch.git  
 $ cd pytorch  
-# git checkout 1.6
+# git checkout 1.6 #v1.8.0 for 1.8 check the tags of PyTorch GitHub repo
 # git submodule update --init --recursive
 ```
 __Note:__ '#' for super user mode and '$' is for regular user.  
 **7-** Install the pytorch on the container that is started on step #4.  
-**a.** Determine the <uarch> (architecture) of the graphics card (GPU):
+**a.** Determine the architecture (uarch) of the graphics card (GPU):
 ```
 $ rocminfo | grep gfx
 ```
