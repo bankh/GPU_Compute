@@ -85,11 +85,11 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 **HDD:** 1.4 TB
 
 - [RunPod](https://www.runpod.io/) System (A100)
-**CPU:** AMD EPYC 7343 VPU
-**GPU:** NVidia A100 (80GB vRAM)
-**RAM:** 1TB
-**HDD:** 109 GB
-**OS/ Framework:** Ubuntu 22.04/ PyTorch 1.113 (various other Pytorch versions are available)
+**CPU:** AMD EPYC 7343 VPU  
+**GPU:** NVidia A100 (80GB vRAM)  
+**RAM:** 1TB  
+**HDD:** 109 GB  
+**OS/ Framework:** Ubuntu 22.04/ PyTorch 1.113 (various other Pytorch versions are available)  
 
 ### 3.2 Software   <a name="32-software"></a>  
 Irrespective of the hardware from section 3.1, below is the information for the software that is set for the benchmark in the next section:  
