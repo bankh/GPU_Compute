@@ -92,12 +92,6 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 **OS/ Framework:** Ubuntu 22.04/ PyTorch 1.113 (various other Pytorch versions are available)  
 
 ### 3.2 Software   <a name="32-software"></a>  
-Irrespective of the hardware from section 3.1, below is the information for the software that is set for the benchmark in the next section:  
-**OS:** Linux 20.04.5 LTS (focal)  
-**Kernel:** 5.15.0.58-generic  
-**Python:** 3.8.10  
-**Docker:** version 23.0.0, build e92dd87  
-
 ### 3.2.1 ROCm  <a name="321-rocm"></a>
 
 **3.2.1.1 Benchmarks**  <a name="3211-benchmarks"></a>  
@@ -112,7 +106,12 @@ __MNIST__
 $ git clone https://github.com/pytorch/examples
 $ cd examples/mnist
 $ python3 main.py --no-mps
-```  
+```
+We run the following with the hardware from section 3.1 a (RX-580) and below is the information for the software.    
+**OS:** Linux 20.04.5 LTS (focal)  
+**Kernel:** 5.15.0.58-generic  
+**Python:** 3.8.10  
+**Docker:** version 23.0.0, build e92dd87  
 MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./Media/mnist_rocm43.png)
 
