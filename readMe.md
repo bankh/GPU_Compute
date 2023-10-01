@@ -85,7 +85,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 **HDD:** 1.4 TB
 
 - [RunPod](https://www.runpod.io/) System (A100)  
-**CPU:** AMD EPYC 7343 VPU  
+**CPU:** AMD EPYC 7343  
 **GPU:** NVidia A100 (80GB vRAM)  
 **RAM:** 1TB  
 **HDD:** 109 GB  
