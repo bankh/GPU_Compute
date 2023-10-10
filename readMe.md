@@ -89,7 +89,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of Asus WX WRX80E-SAGE boar
 **GPU:** NVidia A100 (80GB vRAM)  
 **RAM:** 1TB  
 **HDD:** 109 GB  
-**OS/ Framework:** Ubuntu 22.04/ PyTorch 1.113 (various other Pytorch versions are available)  
+**OS/ Framework:** Ubuntu 22.04/ PyTorch 1.13 (various other Pytorch versions are available)  
 
 ### 3.2 Software   <a name="32-software"></a>  
 ### 3.2.1 ROCm  <a name="321-rocm"></a>
