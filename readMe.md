@@ -29,7 +29,7 @@ AMD-based GPUs are a powerful and flexible choice for GPU computing, offering hi
   
 __Read More:__  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMD_MI25_Hardware)❓  
-&nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature control hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)❓  
+&nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature controller for an MI series GPU](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to change the firmware of AMD_GPUs](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDvbFlashROMs-MI25)❓  
 
 ### 1.2 NVidia-based GPUs <a name="12-nvidia-based-gpus"></a> 
@@ -68,7 +68,7 @@ The same issues arise that the AMD ROCM system has with CUDA. Updates and change
 &nbsp;&nbsp;&nbsp;&nbsp;AMD Radeon RX580 (8GB each)  
 &nbsp;&nbsp;&nbsp;&nbsp;[AMD Radeon Instinct MI25 (16GB each)](https://www.techpowerup.com/gpu-specs/radeon-instinct-mi25.c2983)  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMD_MI25_Hardware)❓  
-&nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature control hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)❓  
+&nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature controller for an MI series GPU](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to change the firmware of AMD_GPUs](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDvbFlashROMs-MI25)❓  
 &nbsp;&nbsp;**RAM:** 256 GB DDR4 3200Mhz  
 &nbsp;&nbsp;**Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
