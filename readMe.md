@@ -62,7 +62,8 @@ The same issues arise that the AMD ROCM system has with CUDA. Updates and change
 ## 🧪 3. Test Systems <a name="3-test-systems"></a>
 ### 3.1 Hardware <a name="31-hardware"></a>
 [Reference sample systems from Bizon](https://bizon-tech.com/bizon-zx5500.html#1385:11079;1387:9033;1388:9039;1389:9045;1393:11073)  
-**a) Custom Build AMD/ROCM**  
+**a) AMD/ROCM**  
+- Custom Build AMD/ROCm:  
 &nbsp;&nbsp;**CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 &nbsp;&nbsp;**GPUs:**  
 &nbsp;&nbsp;&nbsp;&nbsp;AMD Radeon RX580 (8GB each)  
@@ -78,7 +79,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of the Asus WX WRX80E-SAGE 
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/Media/test_hardware.png?raw=true)
 
 **b) NVidia/CUDA**  
-- Custom Build NVidia/Cuda:
+- Custom Build NVidia/Cuda:  
 &nbsp;&nbsp;**CPU:** [AMD Epyc 7532 (32 Cores - 64 VCPUs)](https://www.amd.com/en/products/cpu/amd-epyc-7532)  
 &nbsp;&nbsp;**GPUs:**  
 &nbsp;&nbsp;&nbsp;&nbsp;[4x NVidia P40 (24GB)](https://www.techpowerup.com/gpu-specs/tesla-p40.c2878)  
