@@ -1,0 +1,22 @@
+2023-12-06 05:54:52-Using cpu device
+2023-12-06 05:54:52-Downloading dataset...
+2023-12-06 05:54:52-Loading dataset...
+2023-12-06 05:55:33-Using cuda device
+2023-12-06 05:55:33-Dataset already downloaded...
+2023-12-06 05:55:33-Loading dataset...
+2023-12-06 05:55:37-Epoch: 0020 (0.0583s) loss_train: 1.8374 acc_train: 0.5153 loss_val: 1.8464 acc_val: 0.4950
+2023-12-06 05:55:39-Epoch: 0040 (0.0584s) loss_train: 1.7362 acc_train: 0.7013 loss_val: 1.7570 acc_val: 0.6375
+2023-12-06 05:55:40-Epoch: 0060 (0.0588s) loss_train: 1.6465 acc_train: 0.7906 loss_val: 1.6777 acc_val: 0.7275
+2023-12-06 05:55:41-Epoch: 0080 (0.0588s) loss_train: 1.5744 acc_train: 0.8249 loss_val: 1.6172 acc_val: 0.7575
+2023-12-06 05:55:42-Epoch: 0100 (0.0590s) loss_train: 1.5256 acc_train: 0.8312 loss_val: 1.5745 acc_val: 0.7775
+2023-12-06 05:55:43-Epoch: 0120 (0.0584s) loss_train: 1.4938 acc_train: 0.8493 loss_val: 1.5487 acc_val: 0.7900
+2023-12-06 05:55:45-Epoch: 0140 (0.0583s) loss_train: 1.4622 acc_train: 0.8628 loss_val: 1.5178 acc_val: 0.8075
+2023-12-06 05:55:46-Epoch: 0160 (0.0584s) loss_train: 1.4525 acc_train: 0.8700 loss_val: 1.5125 acc_val: 0.7850
+2023-12-06 05:55:47-Epoch: 0180 (0.0583s) loss_train: 1.4467 acc_train: 0.8836 loss_val: 1.5109 acc_val: 0.8100
+2023-12-06 05:55:48-Epoch: 0200 (0.0584s) loss_train: 1.4236 acc_train: 0.8863 loss_val: 1.4860 acc_val: 0.8375
+2023-12-06 05:55:49-Epoch: 0220 (0.0583s) loss_train: 1.4195 acc_train: 0.8899 loss_val: 1.4857 acc_val: 0.8200
+2023-12-06 05:55:50-Epoch: 0240 (0.0583s) loss_train: 1.4057 acc_train: 0.9007 loss_val: 1.4733 acc_val: 0.8275
+2023-12-06 05:55:52-Epoch: 0260 (0.0584s) loss_train: 1.4009 acc_train: 0.9007 loss_val: 1.4698 acc_val: 0.8350
+2023-12-06 05:55:53-Epoch: 0280 (0.0588s) loss_train: 1.4044 acc_train: 0.9034 loss_val: 1.4688 acc_val: 0.8325
+2023-12-06 05:55:54-Epoch: 0300 (0.0589s) loss_train: 1.3991 acc_train: 0.9116 loss_val: 1.4688 acc_val: 0.8425
+2023-12-06 05:55:54-Test set results: loss 1.4829 accuracy 0.8017
