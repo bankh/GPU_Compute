@@ -1,0 +1,15 @@
+2023-12-06 05:49:35-Using cuda device
+2023-12-06 05:49:35-Downloading dataset...
+2023-12-06 05:49:36-Loading dataset...
+2023-12-06 05:49:36-cuda is in use.
+2023-12-06 05:49:40-Epoch: 0020 (0.0038s) loss_train: 1.6922 acc_train: 0.7276 loss_val: 1.7254 acc_val: 0.6560
+2023-12-06 05:49:40-Epoch: 0040 (0.0029s) loss_train: 1.2569 acc_train: 0.7947 loss_val: 1.3547 acc_val: 0.7340
+2023-12-06 05:49:40-Epoch: 0060 (0.0032s) loss_train: 0.9387 acc_train: 0.8377 loss_val: 1.1001 acc_val: 0.7700
+2023-12-06 05:49:40-Epoch: 0080 (0.0029s) loss_train: 0.7614 acc_train: 0.8957 loss_val: 0.9693 acc_val: 0.7860
+2023-12-06 05:49:40-Epoch: 0100 (0.0029s) loss_train: 0.6470 acc_train: 0.9205 loss_val: 0.8914 acc_val: 0.8000
+2023-12-06 05:49:40-Epoch: 0120 (0.0034s) loss_train: 0.5704 acc_train: 0.9371 loss_val: 0.8398 acc_val: 0.8100
+2023-12-06 05:49:40-Epoch: 0140 (0.0030s) loss_train: 0.5173 acc_train: 0.9437 loss_val: 0.8105 acc_val: 0.8060
+2023-12-06 05:49:40-Epoch: 0160 (0.0034s) loss_train: 0.4752 acc_train: 0.9470 loss_val: 0.7843 acc_val: 0.8100
+2023-12-06 05:49:40-Epoch: 0180 (0.0033s) loss_train: 0.4417 acc_train: 0.9503 loss_val: 0.7662 acc_val: 0.8080
+2023-12-06 05:49:40-Epoch: 0200 (0.0039s) loss_train: 0.4154 acc_train: 0.9545 loss_val: 0.7540 acc_val: 0.8120
+2023-12-06 05:49:40-Test set results: loss 0.7739 accuracy 0.8090
