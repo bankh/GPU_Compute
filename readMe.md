@@ -82,7 +82,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of the Asus WX WRX80E-SAGE 
 - Custom Build NVidia/Cuda:  
 &nbsp;&nbsp;**CPU:** [AMD Epyc 7532 (32 Cores - 64 VCPUs)](https://www.amd.com/en/products/cpu/amd-epyc-7532)  
 &nbsp;&nbsp;**GPUs:**  
-&nbsp;&nbsp;&nbsp;&nbsp;[4x NVidia P40 (24GB)](https://www.techpowerup.com/gpu-specs/tesla-p40.c2878)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4x NVidia P40 (24GB)](https://www.techpowerup.com/gpu-specs/tesla-p40.c2878) (🔌 [**Connector Warning**](https://github.com/bankh/GPU_Compute/tree/main/NVidia))  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to NVidia series]()❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature controller for an NVidia series GPU]()❓  
 &nbsp;&nbsp;**RAM:** 512 GB PC4-2133 LRDIMM (A-Tech)  
