@@ -85,7 +85,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of the Asus WX WRX80E-SAGE 
 &nbsp;&nbsp;&nbsp;&nbsp;[4x NVidia P40 (24GB)](https://www.techpowerup.com/gpu-specs/tesla-p40.c2878) (🔌 [**Connector Warning**](https://github.com/bankh/GPU_Compute/tree/main/NVidia))  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to NVidia series]()❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature controller for an NVidia series GPU]()❓  
-&nbsp;&nbsp;**RAM:** 512 GB PC4-2133 LRDIMM (A-Tech)  
+&nbsp;&nbsp;**RAM:** 256 GB PC4 3200AA DDR4 25600 2RX4 (4x64GB) HMAA8GR7AJR4N-XN (Hynix)  
 &nbsp;&nbsp;**Motherboard:** [Asrock Rack RomeD8-2T](https://www.asrockrack.com/general/productdetail.asp?Model=ROMED8-2T#Specifications)  
   
 - [LambdaClouds](https://cloud.lambdalabs.com/instances) System (1xA10)  
