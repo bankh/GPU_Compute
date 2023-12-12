@@ -87,6 +87,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of the Asus WX WRX80E-SAGE 
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature controller for an NVidia series GPU]()❓  
 &nbsp;&nbsp;**RAM:**  HMAA8GR7AJR4N-XN (Hynix) 256 GB PC4 3200AA DDR4 25600 2RX4 (4x64GB)  
 &nbsp;&nbsp;**Motherboard:** [Asrock Rack RomeD8-2T](https://www.asrockrack.com/general/productdetail.asp?Model=ROMED8-2T#Specifications)  
+&nbsp;&nbsp;**HDD:** 2x Crucial P3 Plus 4TB PCIe Gen4 3D NAND NVMe M.2 SSD  
   
 - [LambdaClouds](https://cloud.lambdalabs.com/instances) System (1xA10)  
 **CPU:** Intel Xeon Platinum 8358 CPU @ 2.60 GHz  
