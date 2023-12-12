@@ -67,14 +67,14 @@ The same issues arise that the AMD ROCM system has with CUDA. Updates and change
 &nbsp;&nbsp;**CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
 &nbsp;&nbsp;**GPUs:**  
 &nbsp;&nbsp;&nbsp;&nbsp;AMD Radeon RX580 (8GB each)  
-&nbsp;&nbsp;&nbsp;&nbsp;[AMD Radeon Instinct MI25 (16GB each)](https://www.techpowerup.com/gpu-specs/radeon-instinct-mi25.c2983)  
+&nbsp;&nbsp;&nbsp;&nbsp;7x[AMD Radeon Instinct MI25 (16GB each)](https://www.techpowerup.com/gpu-specs/radeon-instinct-mi25.c2983)  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to MI series](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMD_MI25_Hardware)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature controller for an MI series GPU](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDGPU-pyfancontrol)❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to change the firmware of AMD_GPUs](https://github.com/bankh/GPU_Compute/tree/main/AMD/AMDvbFlashROMs-MI25)❓  
-&nbsp;&nbsp;**RAM:** 256 GB DDR4 3200Mhz  
+&nbsp;&nbsp;**RAM:** CORSAIR Vengeance LPX 256GB (8 x 32GB) 288-Pin PC RAM DDR4 3600 (PC4 28800)  
 &nbsp;&nbsp;**Motherboard:** [Asus WX WRX80E-SAGE](https://dlcdnets.asus.com/pub/ASUS/mb/SocketTRX4/Pro_WS_WRX80E-SAGE_SE_WIFI/E19401_Pro_WS_WRX80E-SAGE_SE_WIFI_UM_V2_WEB.pdf)  
 
-__Note:__ The BIOS (current up-to-date version 1003) of the Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch off the onboard graphics output switch (by [default 'off'](https://www.asus.com/us/support/FAQ/1049293/)). 
+__Note:__ The BIOS (current up-to-date version 1003) of the Asus WX WRX80E-SAGE board was problematic during the first run with multiple GPUs. It requires to downgrade the BIOS to 0701 with a specific way (e.g., [BIOS Flashback](https://www.youtube.com/watch?v=FPyElZcsW6o)). One also needs to switch on the onboard graphics output switch (by [default 'off'](https://www.asus.com/us/support/FAQ/1049293/)). 
 
 ![Test hardware rocm-smi htop](https://github.com/bankh/GPU_Compute/blob/main/Media/test_hardware.png?raw=true)
 
@@ -85,7 +85,7 @@ __Note:__ The BIOS (current up-to-date version 1003) of the Asus WX WRX80E-SAGE 
 &nbsp;&nbsp;&nbsp;&nbsp;[4x NVidia P40 (24GB)](https://www.techpowerup.com/gpu-specs/tesla-p40.c2878) (🔌 [**Connector Warning**](https://github.com/bankh/GPU_Compute/tree/main/NVidia))  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add active cooling hardware to NVidia series]()❓  
 &nbsp;&nbsp;&nbsp;&nbsp; :exclamation: [How to add temperature controller for an NVidia series GPU]()❓  
-&nbsp;&nbsp;**RAM:** 256 GB PC4 3200AA DDR4 25600 2RX4 (4x64GB) HMAA8GR7AJR4N-XN (Hynix)  
+&nbsp;&nbsp;**RAM:**  HMAA8GR7AJR4N-XN (Hynix) 256 GB PC4 3200AA DDR4 25600 2RX4 (4x64GB)  
 &nbsp;&nbsp;**Motherboard:** [Asrock Rack RomeD8-2T](https://www.asrockrack.com/general/productdetail.asp?Model=ROMED8-2T#Specifications)  
   
 - [LambdaClouds](https://cloud.lambdalabs.com/instances) System (1xA10)  
