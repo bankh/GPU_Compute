@@ -60,8 +60,10 @@ A reference of the GPU comparisons from GPUeater's webpage (relatively old data)
 The same issues arise that the AMD ROCM system has with CUDA. Updates and changes in the dependencies, libraries, and hardware make it difficult to develop solutions by using GPU computation for deep learning applications. Therefore, at the enterprise level, there are solutions such as using cloud platforms, Kubernetes, and other DevOps solutions. For researchers or deep learning studies, it becomes a problem to develop solutions due to a lack of support. Therefore, for AMD's ROCM case, we utilize Docker containers to ease these preparations. However, preparing the right structure in a framework would ease the step of compatibility for the general user. With that, we added here a specific open-source framework, [Cresset](https://github.com/cresset-template/cresset), that could be useful CUDA based machine learning efforts while still using familiar Docker as a platform. 
 
 ## 🧪 3. Test Systems <a name="3-test-systems"></a>
-### 3.1 Hardware <a name="31-hardware"></a>
+### 3.1 Hardware <a name="31-hardware"></a>  
+
 [Reference sample systems from Bizon](https://bizon-tech.com/bizon-zx5500.html#1385:11079;1387:9033;1388:9039;1389:9045;1393:11073)  
+
 **a) AMD/ROCM**  
 - Custom Build AMD/ROCm:  
 &nbsp;&nbsp;**CPU:** [AMD Ryzen ThreadRipper Pro 3955X (16 Cores - 32 VCPUs)](https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-pro-3955wx)  
