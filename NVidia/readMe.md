@@ -9,7 +9,7 @@ $ nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader
 One can find more details in the reference section **[1]**.
 First, install the tool,  
 ```
-$ sudo apt install ipmitools
+$ sudo apt install ipmitool
 ```
 Enable the tool to control the fan manually (16 entries for RomeD8) (0x0 is leaving the FAN1 in auto mode),  
 ```
@@ -37,7 +37,7 @@ $ sudo ipmitool raw 0x3a 0xda
 ```
 We can also check the all the available data on `ipmitool` by:  
 ```
-$ sudo ipmitools sensor
+$ sudo ipmitool sensor
 ```
 You should see a response similar to the one below in the terminal:  
 ![image](https://github.com/bankh/GPU_Compute/assets/9688867/3eace444-49f3-4946-b1b1-0561fbb66fa6)
