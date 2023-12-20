@@ -113,7 +113,7 @@ It is crucial to evaluate the hardware and software using a standardized archite
 **3.2.1.1.1 Pytorch**  
 [Pytorch/examples repository](https://github.com/pytorch/examples) is one of the great references to see the performance of the current hardware and software.  
 
-**a - Single GPU**  
+**a - Single GPU Examples**  
 __MNIST__  
 ```
 $ git clone https://github.com/pytorch/examples
@@ -127,6 +127,8 @@ We run the following with the hardware from section 3.1 a (RX-580) and below is 
 **Docker:** version 23.0.0, build e92dd87  
 MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./Media/mnist_rocm43.png)
+
+**Note:** We have more samples of single GPU training benchmarks for each system in `/CustomSystem/` folders. You can check the log files for [Instinct MI25](https://github.com/bankh/GPU_Compute/tree/main/AMD/CustomSystem) and [Tesla P40](https://github.com/bankh/GPU_Compute/tree/main/NVidia/CustomSystem).
 
 **b - Multi GPUs**  
 References:  
