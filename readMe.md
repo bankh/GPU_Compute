@@ -128,8 +128,6 @@ We run the following with the hardware from section 3.1 a (RX-580) and below is 
 MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./Media/mnist_rocm43.png)
 
-**Note:** We have more samples of single GPU training benchmarks for each system in `/CustomSystem/` folders. You can check the log files for [Instinct MI25](https://github.com/bankh/GPU_Compute/tree/main/AMD/CustomSystem) and [Tesla P40](https://github.com/bankh/GPU_Compute/tree/main/NVidia/CustomSystem).
-
 **b - Multi GPUs**  
 References:  
 - [IOMMU Advisory for Multi-GPU Environments](https://community.amd.com/t5/knowledge-base/iommu-advisory-for-multi-gpu-environments/ta-p/477468) [1](https://forums.developer.nvidia.com/t/parallel-training-with-4-cards-4090-cannot-be-performed-on-amd-5975wx-stuck-at-the-beginning/237813/3), [2](https://forums.developer.nvidia.com/t/multi-gpu-peer-to-peer-access-failing-on-tesla-k80/39748/12)  
@@ -137,6 +135,8 @@ In the current BIOS, we disabled SVM and IOMMU as suggested. We also reduced PCI
 - [Getting Started with Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
 - [SINGLE-MACHINE MODEL PARALLEL BEST PRACTICES](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
 - [PCIe X16 vs X8 with 4 x Titan V GPUs for Machine Learning](https://www.pugetsystems.com/labs/hpc/PCIe-X16-vs-X8-with-4-x-Titan-V-GPUs-for-Machine-Learning-1167/)
+
+❗ **Note:** We have more samples of single GPU training benchmarks for each system in `/CustomSystem/` folders. You can check the log files for [Instinct MI25](https://github.com/bankh/GPU_Compute/tree/main/AMD/CustomSystem) and [Tesla P40](https://github.com/bankh/GPU_Compute/tree/main/NVidia/CustomSystem). ❗
 
 **3.2.1.1.2 Tensorflow**  
 A good reference for performance comparison can be found [here](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/173).  
