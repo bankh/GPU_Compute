@@ -48,10 +48,12 @@ The current process of installing Docker is relatively straightforward and offer
 ##### 2.1.1.2 Standard Installation <a name="2112-standard-installation"></a>
 AMD has undergone changes to its documentation system without properly maintaining the previous libraries. For instance, ROCm documentation with some links can be found at [GitHub](https://github.com/RadeonOpenCompute/ROCm/), while another one [here](https://rocmdocs.amd.com/), at yet another [here](https://docs.amd.com/). This repetition in the documentation creates confusion and wastes time for users. To remain competitive in the market, AMD needs to take concrete steps to streamline its documentation and support. For example, irrespective of the reference or option, we have encountered a problem with ROCm 3.7 installations, which experience computational issues with gfx803-based GPUs (such as the RX580). Unfortunately, AMD's solution is cutting the support of this particular product. Fortunately, there are various comments and potential solutions available online related to this and similar issues (gfx900 or gfx1000 series).  
 
-Here, we need to refer to some of the good examples of fixing the issues for installation:
+Here, we need to refer to some of the good examples of fixing the issues for installation for the case explained above:
 - [xuhuisheng/rocm-build](https://github.com/xuhuisheng/rocm-build) and [xuhuisheng/rocm-gfx803](https://github.com/xuhuisheng/rocm-gfx803)  
 - rictorp/rocm.md ([gist link](https://gist.github.com/rigtorp/d9483af100fb77cee57e4c9fa3c74245))  
 - [AIeater](https://github.com/aieater/rocm_pytorch_informations) by [GPUeater](https://www.gpueater.com/index.html)
+
+Another good example that one can find from YouTube is geohotz' stream on his TinyBox [here](https://www.youtube.com/watch?v=IhkXxFJ_qeI). 
 
 A reference of the GPU comparisons from GPUeater's webpage (relatively old data),
 ![GPUeater screenshot by AIeater](https://github.com/bankh/GPU_Compute/blob/main/Media/GPUeater_comparison.png?raw=true)
