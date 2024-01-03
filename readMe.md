@@ -144,7 +144,7 @@ In the current BIOS, we disabled SVM and IOMMU as suggested. We also reduced PCI
 A good reference for performance comparison can be found [here](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/173).  
 
 **References**  
-Bandyopadhyay, Avimanyu. Hands-On GPU Computing with Python: Explore the capabilities of GPUs for solving high-performance computational problems. Packt Publishing Ltd, 2019.  
+[Bandyopadhyay, Avimanyu. Hands-On GPU Computing with Python: Explore the capabilities of GPUs for solving high-performance computational problems. Packt Publishing Ltd, 2019.](https://github.com/PacktPublishing/Hands-On-GPU-Computing-with-Python)  
 Yin, Junqi, et al. "Comparative evaluation of deep learning workloads for leadership-class systems." BenchCouncil Transactions on Benchmarks, Standards and Evaluations 1.1 (2021): 100005.
 
 **Disclaimer:**
