@@ -131,12 +131,35 @@ MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./Media/mnist_rocm43.png)
 
 **b - Multi GPUs**  
-  
-- [IOMMU Advisory for Multi-GPU Environments](https://community.amd.com/t5/knowledge-base/iommu-advisory-for-multi-gpu-environments/ta-p/477468) [1](https://forums.developer.nvidia.com/t/parallel-training-with-4-cards-4090-cannot-be-performed-on-amd-5975wx-stuck-at-the-beginning/237813/3), [2](https://forums.developer.nvidia.com/t/multi-gpu-peer-to-peer-access-failing-on-tesla-k80/39748/12)  
-In the current BIOS, we disabled SVM and IOMMU as suggested. We also reduced PCIx Latency from 64 bits to 32 bits.  
+AMD Instinct™  and AMD Instinct accelerators, such as AMD Instinct™ using ROCm in a Linux environment.[1]
+```
+$ cat /proc/cmdline
+```
+This will return on the AMD custom system as follows:
+```
+BOOT_IMAGE=/boot/vmlinuz-5.15.0-91-generic ro quiet splash pcie_aspm=off iommu=1 amd_iommu=off pci=nommconf vt.handoff=7
+```
+Here `pcie_aspm=off` `iommu=pt` `amd_iommu=off` and `pci=nommconf` are the settings that are required to have. To do so
+
+  - Backup current GRUB configuration,
+```
+$ sudo cp /etc/default/grub /etc/default/grub.bak
+```
+  Modify the line that starts with GRUB_CMDLINE_LINUX_DEFAULT to match the needed parameters.  
+
+  - Edit GRUB configuration,
+```
+$ sudo nano /etc/default/grub
+```
+  - Update GRUB Configuration and reboot the system,
+```
+$ sudo update-grub
+$ sudo reboot
+```
+❗ **Note:** In the current BIOS, we disabled SVM and IOMMU as suggested. We also reduced PCIx Latency from 64 bits to 32 bits in the BIOS config of the motherboard.  
 - [Getting Started with Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
 - [SINGLE-MACHINE MODEL PARALLEL BEST PRACTICES](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
-- [PCIe X16 vs X8 with 4 x Titan V GPUs for Machine Learning](https://www.pugetsystems.com/labs/hpc/PCIe-X16-vs-X8-with-4-x-Titan-V-GPUs-for-Machine-Learning-1167/)
+- [PCIe X16 vs X8 with 4 x Titan V GPUs for Machine Learning](https://www.pugetsystems.com/labs/hpc/PCIe-X16-vs-X8-with-4-x-Titan-V-GPUs-for-Machine-Learning-1167/)❗ 
 
 ❗ **Note:** We have more samples of single GPU training benchmarks for each system in `/CustomSystem/` folders. You can check the log files for [Instinct MI25](https://github.com/bankh/GPU_Compute/tree/main/AMD/CustomSystem) and [Tesla P40](https://github.com/bankh/GPU_Compute/tree/main/NVidia/CustomSystem). ❗
 
@@ -144,8 +167,10 @@ In the current BIOS, we disabled SVM and IOMMU as suggested. We also reduced PCI
 A good reference for performance comparison can be found [here](https://github.com/ROCmSoftwarePlatform/tensorflow-upstream/issues/173).  
 
 **References**  
-[Bandyopadhyay, Avimanyu. Hands-On GPU Computing with Python: Explore the capabilities of GPUs for solving high-performance computational problems. Packt Publishing Ltd, 2019.](https://github.com/PacktPublishing/Hands-On-GPU-Computing-with-Python)-[Videos](https://www.youtube.com/playlist?list=PLeLcvrwLe184M3PJ5ricnWuODW2B47tGT)  
-Yin, Junqi, et al. "Comparative evaluation of deep learning workloads for leadership-class systems." BenchCouncil Transactions on Benchmarks, Standards and Evaluations 1.1 (2021): 100005.
+[1] [IOMMU Advisory for Multi-GPU Environments](https://community.amd.com/t5/knowledge-base/iommu-advisory-for-multi-gpu-environments/ta-p/477468) [1](https://forums.developer.nvidia.com/t/parallel-training-with-4-cards-4090-cannot-be-performed-on-amd-5975wx-stuck-at-the-beginning/237813/3), [2](https://forums.developer.nvidia.com/t/multi-gpu-peer-to-peer-access-failing-on-tesla-k80/39748/12)  
+[2] [Bandyopadhyay, Avimanyu. Hands-On GPU Computing with Python: Explore the capabilities of GPUs for solving high-performance computational problems. Packt Publishing Ltd, 2019.](https://github.com/PacktPublishing/Hands-On-GPU-Computing-with-Python)-[Videos](https://www.youtube.com/playlist?list=PLeLcvrwLe184M3PJ5ricnWuODW2B47tGT)  
+[3] Yin, Junqi, et al. "Comparative evaluation of deep learning workloads for leadership-class systems." BenchCouncil Transactions on Benchmarks, Standards, and Evaluations 1.1 (2021): 100005.  
+
 
 **Disclaimer:**
 We make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on this repository. We will not be liable for any errors or omissions in this information nor for the availability of this information. We will not be liable for any losses, injuries, or damages from the display or use of this information. Your use of this information is at your own risk.
