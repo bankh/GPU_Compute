@@ -1,0 +1,69 @@
+RocmBandwidthTest Version: 2.6.0
+
+          Launch Command is: ./rocm-bandwidth-test -A
+
+
+          Device: 0,  AMD Ryzen Threadripper PRO 3955WX 16-Cores
+          Device: 1,  Radeon Instinct MI25,  GPU-02151d6b40de4084,  63:0.0
+          Device: 2,  Radeon Instinct MI25,  GPU-02151d71f01018a4,  66:0.0
+          Device: 3,  Radeon Instinct MI25,  GPU-0213fb59b2f22844,  43:0.0
+          Device: 4,  Radeon Instinct MI25,  GPU-02151d6b40dc1124,  46:0.0
+          Device: 5,  Radeon Instinct MI25,  GPU-02151a7d3ea80924,  2f:0.0
+          Device: 6,  Radeon Instinct MI25,  GPU-02151d6b40ee3984,  03:0.0
+
+          Inter-Device Access
+
+          D/D       0         1         2         3         4         5         6         
+
+          0         1         1         1         1         1         1         1         
+
+          1         1         1         1         1         1         1         1         
+
+          2         1         1         1         1         1         1         1         
+
+          3         1         1         1         1         1         1         1         
+
+          4         1         1         1         1         1         1         1         
+
+          5         1         1         1         1         1         1         1         
+
+          6         1         1         1         1         1         1         1         
+
+
+          Inter-Device Numa Distance
+
+          D/D       0         1         2         3         4         5         6         
+
+          0         0         20        20        20        20        20        20        
+
+          1         20        0         40        40        40        40        40        
+
+          2         20        40        0         40        40        40        40        
+
+          3         20        40        40        0         40        40        40        
+
+          4         20        40        40        40        0         40        40        
+
+          5         20        40        40        40        40        0         40        
+
+          6         20        40        40        40        40        40        0         
+
+
+          Bidirectional copy peak bandwidth GB/s
+
+          D/D       0           1           2           3           4           5           6           
+
+          0         N/A         24.903      24.905      24.907      24.904      24.905      24.901      
+
+          1         24.903      N/A         38.632      38.633      38.632      38.630      38.632      
+
+          2         24.905      38.632      N/A         38.632      38.634      38.635      38.632      
+
+          3         24.907      38.633      38.632      N/A         38.631      38.631      38.634      
+
+          4         24.904      38.632      38.634      38.631      N/A         38.633      38.633      
+
+          5         24.905      38.630      38.635      38.631      38.633      N/A         38.633      
+
+          6         24.901      38.632      38.632      38.634      38.633      38.633      N/A         
+
