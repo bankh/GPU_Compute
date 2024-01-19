@@ -156,7 +156,7 @@ $ sudo nano /etc/default/grub
 $ sudo update-grub
 $ sudo reboot
 ```
-❗ **Note:** In the current BIOS of Asus WRX80, we enabled SVM and IOMMU as suggested. We also reduced PCIx Latency from 64 bits to 32 bits in the BIOS config of the motherboard.  
+❗ **Note:** In the current BIOS of Asus WRX80, we disabled SVM and enabled IOMMU as suggested. We also reduced PCIx Latency from 64 bits to 32 bits in the BIOS config of the motherboard.  
 - [Getting Started with Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
 - [SINGLE-MACHINE MODEL PARALLEL BEST PRACTICES](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
 - [PCIe X16 vs X8 with 4 x Titan V GPUs for Machine Learning](https://www.pugetsystems.com/labs/hpc/PCIe-X16-vs-X8-with-4-x-Titan-V-GPUs-for-Machine-Learning-1167/)❗ 
