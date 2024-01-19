@@ -137,7 +137,7 @@ $ cat /proc/cmdline
 ```
 This will return on the AMD custom system as follows:
 ```
-BOOT_IMAGE=/boot/vmlinuz-5.15.0-91-generic ro quiet splash pcie_aspm=off iommu=1 amd_iommu=off pci=nommconf vt.handoff=7
+BOOT_IMAGE=/boot/vmlinuz-5.15.0-91-generic ro quiet splash pcie_aspm=off iommu=pt amd_iommu=on pci=nommconf vt.handoff=7
 ```
 Here `pcie_aspm=off` `iommu=pt` `amd_iommu=off` and `pci=nommconf` are the settings that are required to have. To do so
 
