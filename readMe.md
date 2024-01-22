@@ -173,8 +173,8 @@ A good reference for performance comparison can be found [here](https://github.c
 
 **References**  
 [1] [IOMMU Advisory for Multi-GPU Environments](https://community.amd.com/t5/knowledge-base/iommu-advisory-for-multi-gpu-environments/ta-p/477468)  
-[2](https://forums.developer.nvidia.com/t/parallel-training-with-4-cards-4090-cannot-be-performed-on-amd-5975wx-stuck-at-the-beginning/237813/3),  
-[3](https://forums.developer.nvidia.com/t/multi-gpu-peer-to-peer-access-failing-on-tesla-k80/39748/12)  
+[2] [Parallel training with 4 cards 4090 cannot be performed on AMD 5975WX， stuck at the beginning](https://forums.developer.nvidia.com/t/parallel-training-with-4-cards-4090-cannot-be-performed-on-amd-5975wx-stuck-at-the-beginning/237813/3),  
+[3] [Multi-GPU Peer to Peer access failing on Tesla K80](https://forums.developer.nvidia.com/t/multi-gpu-peer-to-peer-access-failing-on-tesla-k80/39748/12)  
 [4] [Bandyopadhyay, Avimanyu. Hands-On GPU Computing with Python: Explore the capabilities of GPUs for solving high-performance computational problems. Packt Publishing Ltd, 2019.](https://github.com/PacktPublishing/Hands-On-GPU-Computing-with-Python)-[Videos](https://www.youtube.com/playlist?list=PLeLcvrwLe184M3PJ5ricnWuODW2B47tGT)  
 [5] Yin, Junqi, et al. "Comparative evaluation of deep learning workloads for leadership-class systems." BenchCouncil Transactions on Benchmarks, Standards, and Evaluations 1.1 (2021): 100005.  
 
