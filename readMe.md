@@ -114,11 +114,12 @@ It is crucial to evaluate the hardware and software using a standardized archite
 
 **3.2.1.1.1 Pytorch**  
 [Pytorch/examples repository](https://github.com/pytorch/examples) is one of the great references to see the performance of the current hardware and software.  
-
+```
+$ git clone https://github.com/pytorch/examples
+```
 **a - Single GPU Examples**  
 __MNIST__  
 ```
-$ git clone https://github.com/pytorch/examples
 $ cd examples/mnist
 $ python3 main.py --no-mps
 ```
@@ -131,6 +132,10 @@ MNIST Result (gfx803 - ROCm 4.3 - torch 1.9.0a0+gitd69c22d)
 ![MNIST result rocm4.3](./Media/mnist_rocm43.png)
 
 **b - Multi GPUs**  
+```
+$ cd examples/distributed/ddp-tutorial-series
+$ python multigpu.py --batch_size 32 10 5
+```
 AMD Instinct™  and AMD Instinct accelerators, such as AMD Instinct™ using ROCm in a Linux environment.[1]
 ```
 $ cat /proc/cmdline
